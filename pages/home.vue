@@ -1,0 +1,336 @@
+<template>
+
+
+  <section class="about-section brown">
+    <div class="auto-container">
+      <div class="row clearfix">
+
+        <!-- Content Column -->
+        <div class="content-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+
+            <!-- Sec Title Two -->
+            <div class="sec-title-two brown">
+              <div class="title">about us</div>
+              <h2>We are here to manage your <br> finance with <span>experience</span></h2>
+            </div>
+
+            <div class="text">
+              <p>The argument in favor of using filler text goes something like this: If you use real content in the <a href="#">design process,</a> anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+              <p>Aenean tincidunt id mauris id auctor. Donec at ligula lacus. Nulla dignissim mi quis neque interdum, quis porta sem finibus.
+              </p>
+            </div>
+            <div class="row clearfix">
+              <div class="column col-lg-6 col-md-6 col-sm-12">
+                <ul class="list-style-one">
+                  <li>Praesent feugiat sem mattis.</li>
+                </ul>
+              </div>
+              <div class="column col-lg-6 col-md-6 col-sm-12">
+                <ul class="list-style-one">
+                  <li>A wonderful serenity.</li>
+                </ul>
+              </div>
+              <div class="column col-lg-6 col-md-6 col-sm-12">
+                <ul class="list-style-one">
+                  <li>Premium services beyond you.</li>
+                </ul>
+              </div>
+              <div class="column col-lg-6 col-md-6 col-sm-12">
+                <ul class="list-style-one">
+                  <li>Set a link back to this photo.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">Call to ask <a href="#">any question</a> <strong>540-325-1523</strong> <span class="or">or</span> <strong>540-328-1265</strong></div>
+            <div class="signature">
+              <div class="signature-img"><img src="images/icons/signature-1.png" alt=""/></div>
+              <h5>Natalia Duke</h5>
+              <div class="designation">(Chairman and founder)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Column -->
+        <div class="video-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+
+            <!--Video Box-->
+            <div class="video-box">
+              <figure class="image">
+                <img src="images/resource/video-img.jpg" alt="">
+              </figure>
+              <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button"></span></a>
+            </div>
+
+            <div class="fact-counter">
+              <div class="auto-container">
+                <div class="row clearfix">
+
+                  <!--Column-->
+                  <div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                      <div class="count-outer count-box">
+                        <span class="count-text" data-speed="2000" data-stop="1235">0</span>
+                        <h4 class="counter-title">Satisfied Clients</h4>
+                        <div class="text">Dolore magna aliq</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Column-->
+                  <div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                      <div class="count-outer count-box">
+                        <span class="count-text" data-speed="3500" data-stop="1402">0</span>+
+                        <h4 class="counter-title">Completed works</h4>
+                        <div class="text">consectetur adipisicing</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Column-->
+                  <div class="column counter-column col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                      <div class="count-outer count-box">
+                        <span class="count-text" data-speed="2000" data-stop="35">0</span>
+                        <h4 class="counter-title">Winning Awards</h4>
+                        <div class="text">Lorem ipsum dolor</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section-eight">
+    <div class="auto-container">
+      <div class="row clearfix">
+        <!-- Content Column -->
+        <div class="content-column col-lg-8 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <div class="row clearfix">
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-bullhorn"></span>
+                    </div>
+                    <h6><a href="services-single.html">Market Research</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-suitcase"></span>
+                    </div>
+                    <h6><a href="services-single.html">Business Planning</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-area-chart"></span>
+                    </div>
+                    <h6><a href="services-single.html">Investment Trade</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-coffee"></span>
+                    </div>
+                    <h6><a href="services-single.html">Fund Management</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-building"></span>
+                    </div>
+                    <h6><a href="services-single.html">Home loan</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services Block Eleven -->
+              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="1500ms" data-wow-duration="1500ms">
+                  <div class="border-one"></div>
+                  <div class="border-two"></div>
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="icon fa fa-pie-chart"></span>
+                    </div>
+                    <h6><a href="services-single.html">Insurance Service</a></h6>
+                    <div class="text">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="image-column col-lg-4 col-md-8 col-sm-12">
+          <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="images/resource/service-5.jpg" alt=""/>
+              <div class="overlay-box">
+                <div class="overlay-inner">
+                  <div class="content">
+                    <h2>15 <span>d'année d'experience</span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section Two -->
+  <section class="news-section-two alternate">
+    <div class="auto-container">
+      <!-- Sec Title -->
+      <div class="sec-title-two centered">
+        <div class="title">latest Blog</div>
+        <h2>Learn some new info from <br> our latest <span>news</span></h2>
+        <div class="text">The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you <br> reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</div>
+      </div>
+
+      <div class="row clearfix">
+
+        <!-- News Block Two -->
+        <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="images/resource/news-4.jpg" alt="" />
+              <div class="overlay-box">
+                <a href="images/resource/news-4.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+              </div>
+            </div>
+            <div class="lower-content">
+              <ul class="post-meta">
+                <li><span class="fa fa-calendar"></span>September 12, 2019</li>
+                <li><span class="fa fa-user"></span>Admin</li>
+              </ul>
+              <h5><a href="blog-single.html">Strategy for Norway's Peion Fund Global.</a></h5>
+              <a href="blog-single.html" class="theme-btn btn-style-ten">View more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Block Two -->
+        <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="images/resource/news-5.jpg" alt="" />
+              <div class="overlay-box">
+                <a href="images/resource/news-5.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+              </div>
+            </div>
+            <div class="lower-content">
+              <ul class="post-meta">
+                <li><span class="fa fa-calendar"></span>September 12, 2019</li>
+                <li><span class="fa fa-user"></span>Admin</li>
+              </ul>
+              <h5><a href="blog-single.html">What we are capable of usually gets discovered.</a></h5>
+              <a href="blog-single.html" class="theme-btn btn-style-ten">View more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Block Two -->
+        <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="images/resource/news-6.jpg" alt="" />
+              <div class="overlay-box">
+                <a href="images/resource/news-6.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+              </div>
+            </div>
+            <div class="lower-content">
+              <ul class="post-meta">
+                <li><span class="fa fa-calendar"></span>September 12, 2019</li>
+                <li><span class="fa fa-user"></span>Admin</li>
+              </ul>
+              <h5><a href="blog-single.html">Food industry leaders often change their promoters.</a></h5>
+              <a href="blog-single.html" class="theme-btn btn-style-ten">View more</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Nuxt Starter',
+      script: [
+        { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js' },
+        { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js' },
+        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js' },
+      ]
+    }
+  }
+}
+</script>
+<!--<script setup lang="ts">-->
+
+<!--import {useCounter} from "~/stores/counter";-->
+<!--const counter = useCounter()-->
+
+
+<!--// if (process.server) {-->
+<!--//   counter.n = 20-->
+<!--// }-->
+<!--</script>-->

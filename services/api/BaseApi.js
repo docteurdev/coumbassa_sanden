@@ -1,0 +1,126 @@
+import {deleteApi, getApi, postApi} from "./apiService";
+import {Loading, QSpinnerBall} from 'quasar'
+
+class BaseApi {
+
+  static async get (table) {
+    return new Promise((resolve, reject) => {
+      getApi('/'+ table )
+        .then(response => resolve(response) )
+        .catch(error => reject(error));
+    });
+  }
+
+  static async getId (table, id) {
+    return new Promise((resolve, reject) => {
+      getApi('/'+ table+'/'+id )
+        .then(response => resolve(response) )
+        .catch(error => reject(error));
+    });
+  }
+
+  static async search (table, params) {
+    return new Promise((resolve, reject) => {
+      postApi('/my/search/'+ table, params )
+        .then(response => resolve(response) )
+        .catch(error => reject(error));
+    });
+  }
+
+  static async post(table, params) {
+    return new Promise( resolve => {
+      postApi('/my/post/' +table, params)
+        .then((response) => {
+          return resolve(response)
+        }).catch((error) => {
+        return resolve(error)
+      });
+    })
+  }
+
+  static async update(table, params) {
+    return new Promise( resolve => {
+      putApi('/' + table + '/'+id, params)
+        .then((response) => {
+          return resolve(response)
+        }).catch((error) => {
+        return resolve(error)
+      });
+    })
+  }
+
+  static async delete(table, id) {
+    return new Promise( resolve => {
+      deleteApi('/'+ table +'/'+id)
+        .then((response) => {
+          return resolve(response)
+        }).catch((error) => {
+        return resolve(error)
+      });
+    })
+  }
+
+
+  static async getApi (url, params, loading=false, notify=false) {
+    if (loading)
+      Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})
+    return new Promise((resolve, reject) => {
+      getApi(url, params )
+        .then((response) => {
+          Loading.hide()
+          resolve(response)
+        })
+        .catch((error) => {
+          Loading.hide()
+          reject(error)
+        });
+    });
+  }
+  static async postApi(url, params, loading=false, notify=false) {
+    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})
+    return new Promise( resolve => {
+      postApi(url, params)
+        .then((response) => {
+          Loading.hide()
+          return resolve(response)
+        }).catch((error) => {
+        Loading.hide()
+        return resolve(error)
+      });
+    })
+  }
+
+  static async putApi(url, params, loading=false, notify=false) {
+    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})
+    return new Promise( resolve => {
+      putApi(url, params)
+          .then((response) => {
+            Loading.hide()
+            return resolve(response)
+          }).catch((error) => {
+        Loading.hide()
+        return resolve(error)
+      });
+    })
+  }
+
+
+  static async deleteApi(url, params, loading=false, notify=false) {
+    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})
+    return new Promise( resolve => {
+      deleteApi(url, params)
+          .then((response) => {
+            Loading.hide()
+            return resolve(response)
+          }).catch((error) => {
+        Loading.hide()
+        return resolve(error)
+      });
+    })
+  }
+
+}
+
+export {BaseApi};
+
+

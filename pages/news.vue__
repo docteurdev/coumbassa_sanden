@@ -1,0 +1,31 @@
+<template>
+  <section class="about-section-four">
+    <div class="auto-container">
+
+      <div class="sec-title centered">
+        <h2>News</h2>
+      </div>
+
+
+      <div class="row clearfix">
+        <news-item v-for="(item, index) in news" :key="index" :news="item" />
+      </div>
+
+    </div>
+  </section>
+</template>
+
+<script setup>
+useHead({
+  title: 'News',
+})
+
+let news = ref([])
+
+const {data: newsList} = await useFetch(() => 'http://localhost:1337/api/blogs?populate=photo')
+news = newsList.value['data']
+
+console.log(news)
+
+
+</script>

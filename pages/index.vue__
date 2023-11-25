@@ -1,0 +1,28 @@
+<template>
+
+  <div style="height: 100vh">
+    <h1 class="text-center" style="position: relative; top: 50%;">Page en construction</h1>
+
+  </div>
+
+</template>
+
+<script setup>
+useHead({
+  title: 'Coumbassa-Sanden - la référence africaine en fiscalité',
+})
+definePageMeta({
+  layout: "empty",
+});
+
+// change layout on nuxt 3
+
+
+// const {data: newsList} = await useFetch(() => 'http://localhost:1337/api/blogs?populate=photo')
+// const news = newsList.value['data']
+//
+// console.log(news)
+
+
+</script>
+
