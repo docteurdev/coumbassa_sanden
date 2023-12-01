@@ -6,6 +6,7 @@
     <Recu />
   </div>
   <div v-else class="form-wrapper" >
+    <!-- <DE/>  -->
 
     <q-form class="q-gutter-m form" @submit.prevent="registerForfait(e)">
       <div class="input-text-bx" >
@@ -197,8 +198,9 @@ h1{
 <script>
 import CheckItem from "../../components/register/CheckItem.vue";
 import FileItem from "../../components/register/FileItem.vue";
-import Modal from "../../components/Modal.vue"
-import Recu from "../../components/Recu.vue"
+import Modal from "../../components/Modal.vue";
+import Recu from "../../components/Recu.vue";
+import DE from "../../components/DE.vue"
 import axios from "axios";
 import { useQuasar } from 'quasar'
 
@@ -208,7 +210,8 @@ export default {
     CheckItem,
     FileItem,
     Modal,
-    Recu
+    Recu,
+    DE
   },
   data(){
     return{

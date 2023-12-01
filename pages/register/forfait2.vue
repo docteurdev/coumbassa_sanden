@@ -42,85 +42,94 @@
         />
 
          <!-- copie du bail -->
-          <FileItem v-if="reqTrueFour" @handle-file="handleFile" />
-        <CheckItem
+          <FileItem v-if="isShowContract == 'show'" @handle-file="handleFile" />
+        <!-- <CheckItem
           @changing-input="question1"
           text="Si réponse oui à la question 4, transmettre un contrat pour une simulation particulière?"
           num="05"
-        />
-        <div class="input-text-bx">
-          <div class="num">
-            <h4>06</h4>
+        /> -->
+        <div v-if="isShowContract == 'not'">
+          <div class="input-text-bx">
+            <div class="num">
+              <h4>05</h4>
+            </div>
+            <q-input
+            style="margin-bottom: 22px;"
+              filled
+              class="input-text input-date"
+              type="text"
+              v-model="duree"
+              label="Si réponse non à la question 4, quelle est la durée de la location?"
+            />
           </div>
-          <q-input
-          style="margin-bottom: 22px;"
-            filled
-            class="input-text input-date"
-            type="text"
-            v-model="duree"
-            label="Si réponse non à la question 4, quelle est la durée de la location?"
-          />
-        </div>
-  
-        <div class="input-text-bx">
-          <div class="num">
-            <h4>07</h4>
+    
+          <div class="input-text-bx">
+            <div class="num">
+              <h4>06</h4>
+            </div>
+            <q-input
+              filled
+              class="input-text input-date"
+              type="date"
+              v-model="entree"
+              label="Date d'entrée dans les locaux"
+            />
           </div>
-          <q-input
-            filled
-            class="input-text input-date"
-            type="date"
-            v-model="entree"
-            label="Date d'entrée dans les locaux"
-          />
-        </div>
-  
-        <div class="input-text-bx">
-          <div class="num">
-            <h4>08</h4>
+    
+          <div class="input-text-bx">
+            <div class="num">
+              <h4>07</h4>
+            </div>
+            <q-input
+              filled
+              class="input-text input-date"
+              type="date"
+              v-model="dateSignature"
+              label="Date de signature du contrat de location"
+            />
           </div>
-          <q-input
-            filled
-            class="input-text input-date"
-            type="date"
-            v-model="dateSignature"
-            label="Date de signature du contrat de location"
-          />
-        </div>
-        <div class="input-text-bx">
-          <div class="num">
-            <h4>09</h4>
+          <div class="input-text-bx">
+            <div class="num">
+              <h4>08</h4>
+            </div>
+            <q-input
+              filled
+              class="input-text"
+              type="text"
+              v-model="loyeran"
+              label="Quel est le loyer annuel?"
+              hint="REPONSE LIBRE"
+            />
           </div>
-          <q-input
-            filled
-            class="input-text"
-            type="text"
-            v-model="loyeran"
-            label="Quel est le loyer annuel?"
-            hint="REPONSE LIBRE"
+        </div>
+
+        <div v-if="reqTrueFour != null">
+
+          <CheckItem
+            @changing-input="question1"
+            text="Payer votre forfait 2 vous recevez instantanément par email la liquidation"
+            :num="dynaNumOne"
           />
+    
+          <CheckItem
+            @changing-input="question1"
+            text="Calcul des droits et envoi par mail"
+            :num="dynaNumTwo"
+
+          />
+
+          
+    
+          <div class="btn-bx">
+            <q-btn
+              class="cust-btn"
+              label="Payer votre forfait"
+              type="submit"
+              color="primary"
+            />
+          </div>
         </div>
   
-        <CheckItem
-          @changing-input="question1"
-          text="Payer votre forfait 2 vous recevez instantanément par email la liquidation"
-          num="10"
-        />
-  
-        <CheckItem
-          @changing-input="question1"
-          text="Calcul des droits et envoi par mail"
-          num="11"
-        />
-  
-        <div class="btn-bx">
-          <q-btn
-            class="cust-btn"
-            label="Payer votre forfait"
-            type="submit"
-            color="primary"
-          />
-        </div>
       </div>
 
 
@@ -281,6 +290,7 @@ export default {
       file: "",
       reqTrueTwo: null,
       reqTrueThree: null,
+      isShowContract: null,
       reqTrueFour: null,
       reqTrueFive: null,
       reqTrueSix: null,
@@ -295,7 +305,9 @@ export default {
       dateSignature: "",
       entree: "",
       loyeran: "",
-      submited: false
+      submited: false,
+      dynaNumOne: 0,
+      dynaNumTwo: " ",
 
     };
   },
@@ -324,6 +336,16 @@ export default {
 
         case "04":
           this.reqTrueFour = res.value;
+          if(res.value){
+            this.isShowContract = "show";
+            this.dynaNumOne = "05";
+            this.dynaNumTwo = "06";
+          }else{
+            this.isShowContract = 'not'
+            this.dynaNumOne = "09";
+            this.dynaNumTwo = "10";
+
+          }
           break;
         case "05":
           this.reqTrueFive = res.value;

@@ -45,16 +45,16 @@
                 num="04"
               />
 
-              <!-- copie du bail -->
-              <FileItem v-if="reqTrueFour" @handle-file="handleFile" />
-
-        
+             
               <CheckItem
                 @changing-input="question1"
                 
                 text="Si réponse oui à la question 4, transmettre un contrat pour une simulation particulière?"
                 num="05"
               />
+
+               <!-- copie du bail -->
+               <FileItem v-if="reqTrueFive" @handle-file="handleFile" />
           
               <div class="input-text-bx">
                 <div class="num">

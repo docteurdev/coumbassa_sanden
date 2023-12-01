@@ -16,9 +16,9 @@
           </div>
         </div>
       </div>
-      <div>
+      <!-- <div>
    
-  </div>
+  </div> -->
   </template>
   <style scoped>
 
@@ -108,7 +108,7 @@
     },
     methods:{
       handleChange(){
-        console.log("ysessss");
+        console.log("ysessss", this.num);
           this.yes = this.yes;
           this.no = false
           this.isChecked = true

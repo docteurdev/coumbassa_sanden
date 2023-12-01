@@ -27,7 +27,7 @@
             <h4>INFORMATIONS CLIENT</h4>
             <h5>Numéro de téléphone</h5>
 
-            <p class="recu_num"> N° 1234455 </p>
+            <p class="recu_num"> 07 03 23 78 94 </p>
         </div>
      </div>
 
