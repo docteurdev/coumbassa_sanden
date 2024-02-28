@@ -89,7 +89,7 @@
   <!-- End Team Page Section -->
 
   <!-- Contact Info Section -->
-  <section class="contact-info-section" style="background-image:url('/images/background/patern-3.png')">
+  <!-- <section class="contact-info-section" style="background-image:url('/images/background/patern-3.png')">
     <div class="auto-container">
       <div class="row clearfix">
         <div class="column col-lg-4 col-md-6 col-sm-12">
@@ -107,8 +107,13 @@
         <div class="column col-lg-4 col-md-6 col-sm-12">
           <h4>Email</h4>
           <ul class="list-style-six">
-            <li><span class="icon flaticon-e-mail-envelope"></span>contact@coumbassa-sanden.com</li>
+            <li><span class="icon flaticon-e-mail-envelope"></span> <a style="text-decoration: none; color: inherit;" href="mailto:contact@coumbassa-sanden.com">contact@coumbassa-sanden.com</a> </li>
           </ul>
+          <li style="display: flex; justify-content: center; align-items: center;">
+              <img 
+              style="width: 180px; "
+              src="/img/qr-code-white.jpeg" alt="QR-CODE.png" srcset="">
+            </li>
         </div>
         <div class="column col-lg-4 col-md-6 col-sm-12">
           <h4>Téléphone</h4>
@@ -117,11 +122,7 @@
               <span class="icon flaticon-phone-receiver"></span>
               +(225) 07 10 10 29 43
             </li>
-            <li>
-              <img 
-              style="filter: drop-shadow(2px 4px 6px black);width: 180px; "
-              src="/img/QR-CODE.png" alt="QR-CODE.png" srcset="">
-            </li>
+           
           </ul>
         </div>
 
@@ -130,7 +131,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
   <!-- End Contact Info Section -->
 </template>
 
