@@ -44,7 +44,7 @@
             </div>
             <div class="question">Call to ask <a href="#">any question</a> <strong>540-325-1523</strong> <span class="or">or</span> <strong>540-328-1265</strong></div>
             <div class="signature">
-              <div class="signature-img"><img src="images/icons/signature-1.png" alt=""/></div>
+              <div class="signature-img"><img src="/images/icons/signature-1.png" alt=""/></div>
               <h5>Natalia Duke</h5>
               <div class="designation">(Chairman and founder)</div>
             </div>
@@ -58,7 +58,7 @@
             <!--Video Box-->
             <div class="video-box">
               <figure class="image">
-                <img src="images/resource/video-img.jpg" alt="">
+                <img src="/images/resource/video-img.jpg" alt="">
               </figure>
               <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button"></span></a>
             </div>
@@ -217,7 +217,7 @@
         <div class="image-column col-lg-4 col-md-8 col-sm-12">
           <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/resource/service-5.jpg" alt=""/>
+              <img src="/images/resource/service-5.jpg" alt=""/>
               <div class="overlay-box">
                 <div class="overlay-inner">
                   <div class="content">
@@ -248,9 +248,9 @@
         <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
           <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/resource/news-4.jpg" alt="" />
+              <img src="/images/resource/news-4.jpg" alt="" />
               <div class="overlay-box">
-                <a href="images/resource/news-4.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+                <a href="/images/resource/news-4.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
               </div>
             </div>
             <div class="lower-content">
@@ -268,9 +268,9 @@
         <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
           <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/resource/news-5.jpg" alt="" />
+              <img src="/images/resource/news-5.jpg" alt="" />
               <div class="overlay-box">
-                <a href="images/resource/news-5.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+                <a href="/images/resource/news-5.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
               </div>
             </div>
             <div class="lower-content">
@@ -288,9 +288,9 @@
         <div class="news-block-two brown col-lg-4 col-md-6 col-sm-12">
           <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/resource/news-6.jpg" alt="" />
+              <img src="/images/resource/news-6.jpg" alt="" />
               <div class="overlay-box">
-                <a href="images/resource/news-6.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
+                <a href="/images/resource/news-6.jpg" data-fancybox="news" data-caption="" class="plus flaticon-plus-symbol"></a>
               </div>
             </div>
             <div class="lower-content">

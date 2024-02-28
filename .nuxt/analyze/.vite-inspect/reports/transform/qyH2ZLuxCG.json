@@ -1,0 +1,17 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1709123919309,
+      "end": 1709123919309
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123919309,
+      "end": 1709123919408,
+      "order": "normal"
+    }
+  ]
+}

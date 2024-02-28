@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/layouts/admin.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n<!--  <section class=\"page-title\">-->\r\n<!--    <div class=\"auto-container\">-->\r\n<!--      <div class=\"content\">-->\r\n<!--        <h1>Service <span>details</span></h1>-->\r\n<!--        <ul class=\"page-breadcrumb\">-->\r\n<!--          <li><a href=\"index.html\">Home</a></li>-->\r\n<!--          <li>Services details</li>-->\r\n<!--        </ul>-->\r\n<!--      </div>-->\r\n<!--    </div>-->\r\n<!--  </section>-->\r\n\r\n  <div class=\"sidebar-page-container\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"row clearfix\">\r\n\r\n        <!--Sidebar Side-->\r\n        <div class=\"sidebar-side col-lg-3 col-md-12 col-sm-12\">\r\n          <aside class=\"sidebar default-sidebar\">\r\n\r\n            <!--Blog Category Widget-->\r\n            <div class=\"sidebar-widget sidebar-blog-category\">\r\n              <ul class=\"blog-cat\" style=\"padding-left: 0px\">\r\n                <li class=\"active\"><a href=\"services-single.html\">Finance Planning</a></li>\r\n                <li><a href=\"services-single.html\">Business Insurance</a></li>\r\n                <li><a href=\"services-single.html\">Car Insurance</a></li>\r\n                <li><a href=\"services-single.html\">Family Insurance</a></li>\r\n                <li><a href=\"services-single.html\">Tax management</a></li>\r\n              </ul>\r\n            </div>\r\n\r\n            <!-- Banner Widget-->\r\n            <div class=\"sidebar-widget banner-widget\">\r\n              <div class=\"widget-content\" style=\"background-image:url('/images/resource/service-15.jpg')\">\r\n                <div class=\"logo\">\r\n                  <img src=\"/images/icons/widget-logo.png\" alt=\"\">\r\n                </div>\r\n                <div class=\"title\">Securied Business with</div>\r\n                <h2>Financ</h2>\r\n                <a href=\"contact.html\" class=\"theme-btn btn-style-seventen\">Let’s start now <span class=\"icon flaticon-link\"></span></a>\r\n              </div>\r\n            </div>\r\n\r\n          </aside>\r\n        </div>\r\n\r\n        <!--Content Side-->\r\n        <div class=\"content-side col-lg-9 col-md-12 col-sm-12\">\r\n          <div class=\"services-single\">\r\n            <slot />\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n<script setup>\r\n\r\n</script>\r\n",
+      "start": 1709123886910,
+      "end": 1709123889072,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123889072,
+      "end": 1709123889072,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123889073,
+      "end": 1709123889073,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, renderSlot as _renderSlot, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '/images/icons/widget-logo.png'\n\n\nconst _hoisted_1 = { class: \"sidebar-page-container\" }\nconst _hoisted_2 = { class: \"auto-container\" }\nconst _hoisted_3 = { class: \"row clearfix\" }\nconst _hoisted_4 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"sidebar-side col-lg-3 col-md-12 col-sm-12\\\"><aside class=\\\"sidebar default-sidebar\\\"><div class=\\\"sidebar-widget sidebar-blog-category\\\"><ul class=\\\"blog-cat\\\" style=\\\"padding-left:0px;\\\"><li class=\\\"active\\\"><a href=\\\"services-single.html\\\">Finance Planning</a></li><li><a href=\\\"services-single.html\\\">Business Insurance</a></li><li><a href=\\\"services-single.html\\\">Car Insurance</a></li><li><a href=\\\"services-single.html\\\">Family Insurance</a></li><li><a href=\\\"services-single.html\\\">Tax management</a></li></ul></div><div class=\\\"sidebar-widget banner-widget\\\"><div class=\\\"widget-content\\\" style=\\\"background-image:url(&#39;/images/resource/service-15.jpg&#39;);\\\"><div class=\\\"logo\\\"><img src=\\\"\" + _imports_0 + \"\\\" alt=\\\"\\\"></div><div class=\\\"title\\\">Securied Business with</div><h2>Financ</h2><a href=\\\"contact.html\\\" class=\\\"theme-btn btn-style-seventen\\\">Let’s start now <span class=\\\"icon flaticon-link\\\"></span></a></div></div></aside></div>\", 1)\nconst _hoisted_5 = { class: \"content-side col-lg-9 col-md-12 col-sm-12\" }\nconst _hoisted_6 = { class: \"services-single\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            _renderSlot(_ctx.$slots, \"default\")\n          ])\n        ])\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123889073,
+      "end": 1709123889088,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123889088,
+      "end": 1709123889088,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123889088,
+      "end": 1709123889088,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123889088,
+      "end": 1709123889088,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123889088,
+      "end": 1709123889088,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123889088,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123889089,
+      "end": 1709123889089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123889090,
+      "end": 1709123889090,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123889090,
+      "end": 1709123889090,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123889090,
+      "end": 1709123889090,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123889090,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123889140,
+      "end": 1709123889140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123889140,
+      "end": 1709123889141,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123889141,
+      "end": 1709123889141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123889141,
+      "end": 1709123889141,
+      "order": "normal"
+    }
+  ]
+}

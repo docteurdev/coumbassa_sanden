@@ -64,7 +64,7 @@
 
             <div class="video-box">
               <figure class="image">
-                <img src="images/home1.jpg" alt="">
+                <img src="/images/home1.jpg" alt="">
               </figure>
               <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button"></span></a>
             </div>
@@ -181,7 +181,7 @@
         <div class="image-column col-lg-4 col-md-8 col-sm-12">
           <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/profil1.png" alt=""/>
+              <img src="/images/profil1.png" alt=""/>
               <div class="overlay-box">
                 <div class="overlay-inner">
                   <div class="content">
@@ -219,7 +219,7 @@
 
 <script setup>
 useHead({
-  title: 'Coumbassa-Sanden - la référence affricaine en fiscalité',
+  title: 'Coumbassa-Sanden - la référence africaine en fiscalité',
 })
 
 const {data: newsList} = await useFetch(() => 'http://localhost:1337/api/blogs?populate=photo')

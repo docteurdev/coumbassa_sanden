@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="image-column col-lg-6 col-md-12 col-sm-12 pl-5">
+        <div class="image-column col-lg-6 col-md-12 col-sm-12 pl-">
           <img v-if="pages?.image2" :src="apiRoot+pages?.image2?.url" alt="" width="1000" style="padding-top: 10%">
         </div>
       </div>

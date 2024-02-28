@@ -1,0 +1,216 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/services/api/apiService.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import axios from 'axios'\r\nimport {LocalStorage} from \"quasar\";\r\n\r\nconst baseurl = 'http://localhost:1337/api';\r\n\r\nexport async function getApi (url, params = {}) {\r\n  let token = LocalStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    // headers: { 'Authorization': 'Bearer ' + token }\r\n  })\r\n  return await http.get(baseurl + url, { params })\r\n    .then((response) => {\r\n      return response.data\r\n    })\r\n}\r\n\r\nexport function postApi (url, params) {\r\n  let token = LocalStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    headers: { 'Authorization': 'Bearer ' + token , 'Shopid': 1}\r\n  })\r\n  const formData = new FormData()\r\n  Object.keys(params).forEach(key => {\r\n    if (params[key] == null) {\r\n      console.log(key)\r\n    } else {\r\n      formData.append(key, params[key])\r\n    }\r\n  })\r\n\r\n  return http.post(baseurl + url, formData)\r\n    .then((response) => {\r\n      return response.data\r\n    })\r\n}\r\n\r\nexport function postSimple (url, params) {\r\n  const headers = { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } }\r\n  const token = localStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    headers: { Authorization: 'Bearer ' + token }\r\n  })\r\n  const promise1 = http.post(baseurl + url, params, headers)\r\n    .then((response) => {\r\n      return response.data\r\n    })\r\n\r\n  return Promise.all([promise1]).then((values) => {\r\n    return values[0]\r\n  })\r\n}\r\n\r\nexport function postGlobal (url, params) {\r\n  const token = localStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    headers: { Authorization: 'Bearer ' + token, Shopid: 1 }\r\n  })\r\n  return http.post(url, params)\r\n    .then((response) => {\r\n      return response.data\r\n    })\r\n}\r\n\r\nexport function putApi (url, params) {\r\n  const headers = { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } }\r\n  const token = localStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    headers: { Authorization: 'Bearer ' + token, Shopid: 1 }\r\n  })\r\n  return http.put(baseurl + url, params, headers)\r\n    .then((response) => {\r\n      return response.data\r\n    }).catch(() => {\r\n      return 'Connexion Impossible'\r\n    })\r\n}\r\n\r\nexport function deleteApi (url, params) {\r\n  const token = localStorage.getItem('token')\r\n  const http = axios.create({\r\n    baseURL: baseurl,\r\n    headers: { Authorization: 'Bearer ' + token }\r\n  })\r\n  // return http.delete(baseurl + url, { params: params, headers })\r\n  return http.delete(baseurl + url, { params })\r\n    .then((response) => {\r\n      return response.data\r\n    })\r\n}\r\n\r\n\r\nexport default {\r\n  getApi,\r\n  postApi,\r\n  postSimple,\r\n  postGlobal,\r\n  putApi,\r\n  deleteApi,\r\n  // postApiLogin\r\n}\r\n",
+      "start": 1709123946233,
+      "end": 1709123947109,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123947109,
+      "end": 1709123947109,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123947109,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123947110,
+      "end": 1709123947110,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123947110,
+      "end": 1709123947122,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123947122,
+      "end": 1709123947122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123947122,
+      "end": 1709123947122,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123947122,
+      "end": 1709123947123,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123947123,
+      "end": 1709123947123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123947123,
+      "end": 1709123947123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123947123,
+      "end": 1709123947123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123947123,
+      "end": 1709123947124,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123947124,
+      "end": 1709123947124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123947124,
+      "end": 1709123947124,
+      "order": "normal"
+    }
+  ]
+}

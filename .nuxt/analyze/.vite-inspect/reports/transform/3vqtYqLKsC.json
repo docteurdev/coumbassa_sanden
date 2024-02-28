@@ -1,0 +1,218 @@
+{
+  "resolvedId": "virtual:nuxt:C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/.nuxt/routes.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "import { default as _91id_93_45_91slug_934FOyTmb9LmMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id]-[slug].vue?macro=true\";\nimport { default as _91id_93QsZ3KMDqqgMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id].vue?macro=true\";\nimport { default as indexnIsavXp0HPMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/index.vue?macro=true\";\nimport { default as indexLhfPNCBaF2Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/admin/index.vue?macro=true\";\nimport { default as _91id_93UCA10WYWrvMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/[id].vue?macro=true\";\nimport { default as indexP72lp9qHnCMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/index.vue?macro=true\";\nimport { default as inscription4YRorctSI1Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/inscription.vue?macro=true\";\nimport { default as login3j3TKGzbJeMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/login.vue?macro=true\";\nimport { default as profilnsjeYHulJTMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/profil.vue?macro=true\";\nimport { default as contact0m4NbNllXPMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact.vue?macro=true\";\nimport { default as contact2rpPMeXjTiEMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact2.vue?macro=true\";\nimport { default as _91id_93_45_91slug_93bSCJrXLlf5Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id]-[slug].vue?macro=true\";\nimport { default as _91id_934aXbWeVI3QMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id].vue?macro=true\";\nimport { default as indexWq3l2PexUMMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/index.vue?macro=true\";\nimport { default as home5cRv8MiyqUMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/home.vue?macro=true\";\nimport { default as immobilierOgoCUkuIGhMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/immobilier.vue?macro=true\";\nimport { default as indexyqaLT8s91OMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index.vue?macro=true\";\nimport { default as index3N1RkeW9PVjMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index3.vue?macro=true\";\nimport { default as missionWf93wjB1LuMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mission.vue?macro=true\";\nimport { default as mot_45ceoUjDSvbr54tMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mot-ceo.vue?macro=true\";\nimport { default as newsletterh57fZh2HtwMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/newsletter.vue?macro=true\";\nimport { default as services_45taxtech38QI0SYvDJMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services-taxtech.vue?macro=true\";\nimport { default as servicesrjfqMcfJRYMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services.vue?macro=true\";\nexport default [\n  {\n    name: _91id_93_45_91slug_934FOyTmb9LmMeta?.name ?? \"actualites-id-slug\",\n    path: _91id_93_45_91slug_934FOyTmb9LmMeta?.path ?? \"/actualites/:id()-:slug()\",\n    meta: _91id_93_45_91slug_934FOyTmb9LmMeta || {},\n    alias: _91id_93_45_91slug_934FOyTmb9LmMeta?.alias || [],\n    redirect: _91id_93_45_91slug_934FOyTmb9LmMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id]-[slug].vue\").then(m => m.default || m)\n  },\n  {\n    name: _91id_93QsZ3KMDqqgMeta?.name ?? \"actualites-id\",\n    path: _91id_93QsZ3KMDqqgMeta?.path ?? \"/actualites/:id()\",\n    meta: _91id_93QsZ3KMDqqgMeta || {},\n    alias: _91id_93QsZ3KMDqqgMeta?.alias || [],\n    redirect: _91id_93QsZ3KMDqqgMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id].vue\").then(m => m.default || m)\n  },\n  {\n    name: indexnIsavXp0HPMeta?.name ?? \"actualites\",\n    path: indexnIsavXp0HPMeta?.path ?? \"/actualites\",\n    meta: indexnIsavXp0HPMeta || {},\n    alias: indexnIsavXp0HPMeta?.alias || [],\n    redirect: indexnIsavXp0HPMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexLhfPNCBaF2Meta?.name ?? \"admin\",\n    path: indexLhfPNCBaF2Meta?.path ?? \"/admin\",\n    meta: indexLhfPNCBaF2Meta || {},\n    alias: indexLhfPNCBaF2Meta?.alias || [],\n    redirect: indexLhfPNCBaF2Meta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/admin/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: _91id_93UCA10WYWrvMeta?.name ?? \"blog-id\",\n    path: _91id_93UCA10WYWrvMeta?.path ?? \"/blog/:id()\",\n    meta: _91id_93UCA10WYWrvMeta || {},\n    alias: _91id_93UCA10WYWrvMeta?.alias || [],\n    redirect: _91id_93UCA10WYWrvMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/[id].vue\").then(m => m.default || m)\n  },\n  {\n    name: indexP72lp9qHnCMeta?.name ?? \"blog\",\n    path: indexP72lp9qHnCMeta?.path ?? \"/blog\",\n    meta: indexP72lp9qHnCMeta || {},\n    alias: indexP72lp9qHnCMeta?.alias || [],\n    redirect: indexP72lp9qHnCMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: inscription4YRorctSI1Meta?.name ?? \"compte-inscription\",\n    path: inscription4YRorctSI1Meta?.path ?? \"/compte/inscription\",\n    meta: inscription4YRorctSI1Meta || {},\n    alias: inscription4YRorctSI1Meta?.alias || [],\n    redirect: inscription4YRorctSI1Meta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/inscription.vue\").then(m => m.default || m)\n  },\n  {\n    name: login3j3TKGzbJeMeta?.name ?? \"compte-login\",\n    path: login3j3TKGzbJeMeta?.path ?? \"/compte/login\",\n    meta: login3j3TKGzbJeMeta || {},\n    alias: login3j3TKGzbJeMeta?.alias || [],\n    redirect: login3j3TKGzbJeMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/login.vue\").then(m => m.default || m)\n  },\n  {\n    name: profilnsjeYHulJTMeta?.name ?? \"compte-profil\",\n    path: profilnsjeYHulJTMeta?.path ?? \"/compte/profil\",\n    meta: profilnsjeYHulJTMeta || {},\n    alias: profilnsjeYHulJTMeta?.alias || [],\n    redirect: profilnsjeYHulJTMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/profil.vue\").then(m => m.default || m)\n  },\n  {\n    name: contact0m4NbNllXPMeta?.name ?? \"contact\",\n    path: contact0m4NbNllXPMeta?.path ?? \"/contact\",\n    meta: contact0m4NbNllXPMeta || {},\n    alias: contact0m4NbNllXPMeta?.alias || [],\n    redirect: contact0m4NbNllXPMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact.vue\").then(m => m.default || m)\n  },\n  {\n    name: contact2rpPMeXjTiEMeta?.name ?? \"contact2\",\n    path: contact2rpPMeXjTiEMeta?.path ?? \"/contact2\",\n    meta: contact2rpPMeXjTiEMeta || {},\n    alias: contact2rpPMeXjTiEMeta?.alias || [],\n    redirect: contact2rpPMeXjTiEMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact2.vue\").then(m => m.default || m)\n  },\n  {\n    name: _91id_93_45_91slug_93bSCJrXLlf5Meta?.name ?? \"event-id-slug\",\n    path: _91id_93_45_91slug_93bSCJrXLlf5Meta?.path ?? \"/event/:id()-:slug()\",\n    meta: _91id_93_45_91slug_93bSCJrXLlf5Meta || {},\n    alias: _91id_93_45_91slug_93bSCJrXLlf5Meta?.alias || [],\n    redirect: _91id_93_45_91slug_93bSCJrXLlf5Meta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id]-[slug].vue\").then(m => m.default || m)\n  },\n  {\n    name: _91id_934aXbWeVI3QMeta?.name ?? \"event-id\",\n    path: _91id_934aXbWeVI3QMeta?.path ?? \"/event/:id()\",\n    meta: _91id_934aXbWeVI3QMeta || {},\n    alias: _91id_934aXbWeVI3QMeta?.alias || [],\n    redirect: _91id_934aXbWeVI3QMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id].vue\").then(m => m.default || m)\n  },\n  {\n    name: indexWq3l2PexUMMeta?.name ?? \"event\",\n    path: indexWq3l2PexUMMeta?.path ?? \"/event\",\n    meta: indexWq3l2PexUMMeta || {},\n    alias: indexWq3l2PexUMMeta?.alias || [],\n    redirect: indexWq3l2PexUMMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: home5cRv8MiyqUMeta?.name ?? \"home\",\n    path: home5cRv8MiyqUMeta?.path ?? \"/home\",\n    meta: home5cRv8MiyqUMeta || {},\n    alias: home5cRv8MiyqUMeta?.alias || [],\n    redirect: home5cRv8MiyqUMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/home.vue\").then(m => m.default || m)\n  },\n  {\n    name: immobilierOgoCUkuIGhMeta?.name ?? \"immobilier\",\n    path: immobilierOgoCUkuIGhMeta?.path ?? \"/immobilier\",\n    meta: immobilierOgoCUkuIGhMeta || {},\n    alias: immobilierOgoCUkuIGhMeta?.alias || [],\n    redirect: immobilierOgoCUkuIGhMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/immobilier.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexyqaLT8s91OMeta?.name ?? \"index\",\n    path: indexyqaLT8s91OMeta?.path ?? \"/\",\n    meta: indexyqaLT8s91OMeta || {},\n    alias: indexyqaLT8s91OMeta?.alias || [],\n    redirect: indexyqaLT8s91OMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: index3N1RkeW9PVjMeta?.name ?? \"index3\",\n    path: index3N1RkeW9PVjMeta?.path ?? \"/index3\",\n    meta: index3N1RkeW9PVjMeta || {},\n    alias: index3N1RkeW9PVjMeta?.alias || [],\n    redirect: index3N1RkeW9PVjMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index3.vue\").then(m => m.default || m)\n  },\n  {\n    name: missionWf93wjB1LuMeta?.name ?? \"mission\",\n    path: missionWf93wjB1LuMeta?.path ?? \"/mission\",\n    meta: missionWf93wjB1LuMeta || {},\n    alias: missionWf93wjB1LuMeta?.alias || [],\n    redirect: missionWf93wjB1LuMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mission.vue\").then(m => m.default || m)\n  },\n  {\n    name: mot_45ceoUjDSvbr54tMeta?.name ?? \"mot-ceo\",\n    path: mot_45ceoUjDSvbr54tMeta?.path ?? \"/mot-ceo\",\n    meta: mot_45ceoUjDSvbr54tMeta || {},\n    alias: mot_45ceoUjDSvbr54tMeta?.alias || [],\n    redirect: mot_45ceoUjDSvbr54tMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mot-ceo.vue\").then(m => m.default || m)\n  },\n  {\n    name: newsletterh57fZh2HtwMeta?.name ?? \"newsletter\",\n    path: newsletterh57fZh2HtwMeta?.path ?? \"/newsletter\",\n    meta: newsletterh57fZh2HtwMeta || {},\n    alias: newsletterh57fZh2HtwMeta?.alias || [],\n    redirect: newsletterh57fZh2HtwMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/newsletter.vue\").then(m => m.default || m)\n  },\n  {\n    name: services_45taxtech38QI0SYvDJMeta?.name ?? \"services-taxtech\",\n    path: services_45taxtech38QI0SYvDJMeta?.path ?? \"/services-taxtech\",\n    meta: services_45taxtech38QI0SYvDJMeta || {},\n    alias: services_45taxtech38QI0SYvDJMeta?.alias || [],\n    redirect: services_45taxtech38QI0SYvDJMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services-taxtech.vue\").then(m => m.default || m)\n  },\n  {\n    name: servicesrjfqMcfJRYMeta?.name ?? \"services\",\n    path: servicesrjfqMcfJRYMeta?.path ?? \"/services\",\n    meta: servicesrjfqMcfJRYMeta || {},\n    alias: servicesrjfqMcfJRYMeta?.alias || [],\n    redirect: servicesrjfqMcfJRYMeta?.redirect,\n    component: () => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services.vue\").then(m => m.default || m)\n  }\n]",
+      "start": 1709123874373,
+      "end": 1709123874373,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123874374,
+      "end": 1709123874374,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123874374,
+      "end": 1709123874374,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123874374,
+      "end": 1709123874375,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123874375,
+      "end": 1709123874375,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123874375,
+      "end": 1709123874375,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123874375,
+      "end": 1709123874375,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123874375,
+      "end": 1709123874376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123874376,
+      "end": 1709123874376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123874376,
+      "end": 1709123874376,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123874378,
+      "end": 1709123874379,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123874380,
+      "end": 1709123874380,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123874381,
+      "end": 1709123874381,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123874383,
+      "end": 1709123874383,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123874545,
+      "end": 1709123874546,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123874560,
+      "end": 1709123874561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123875081,
+      "end": 1709123875081,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123875087,
+      "end": 1709123875087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123875089,
+      "end": 1709123875089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123875089,
+      "end": 1709123875089,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123875090,
+      "end": 1709123875090,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123875090,
+      "end": 1709123875090,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123875090,
+      "end": 1709123875097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123875098,
+      "end": 1709123875098,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123875099,
+      "end": 1709123875099,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123875099,
+      "end": 1709123875121,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123875122,
+      "end": 1709123875123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123875123,
+      "end": 1709123875123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123875123,
+      "end": 1709123875123,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123875124,
+      "end": 1709123875124,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123875124,
+      "end": 1709123875124,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123875124,
+      "end": 1709123875124,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123875124,
+      "end": 1709123875125,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { default as _91id_93_45_91slug_934FOyTmb9LmMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id]-[slug].vue?macro=true\";\nimport { default as _91id_93QsZ3KMDqqgMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id].vue?macro=true\";\nimport { default as indexnIsavXp0HPMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/index.vue?macro=true\";\nimport { default as indexLhfPNCBaF2Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/admin/index.vue?macro=true\";\nimport { default as _91id_93UCA10WYWrvMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/[id].vue?macro=true\";\nimport { default as indexP72lp9qHnCMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/index.vue?macro=true\";\nimport { default as inscription4YRorctSI1Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/inscription.vue?macro=true\";\nimport { default as login3j3TKGzbJeMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/login.vue?macro=true\";\nimport { default as profilnsjeYHulJTMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/profil.vue?macro=true\";\nimport { default as contact0m4NbNllXPMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact.vue?macro=true\";\nimport { default as contact2rpPMeXjTiEMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact2.vue?macro=true\";\nimport { default as _91id_93_45_91slug_93bSCJrXLlf5Meta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id]-[slug].vue?macro=true\";\nimport { default as _91id_934aXbWeVI3QMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id].vue?macro=true\";\nimport { default as indexWq3l2PexUMMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/index.vue?macro=true\";\nimport { default as home5cRv8MiyqUMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/home.vue?macro=true\";\nimport { default as immobilierOgoCUkuIGhMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/immobilier.vue?macro=true\";\nimport { default as indexyqaLT8s91OMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index.vue?macro=true\";\nimport { default as index3N1RkeW9PVjMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index3.vue?macro=true\";\nimport { default as missionWf93wjB1LuMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mission.vue?macro=true\";\nimport { default as mot_45ceoUjDSvbr54tMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mot-ceo.vue?macro=true\";\nimport { default as newsletterh57fZh2HtwMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/newsletter.vue?macro=true\";\nimport { default as services_45taxtech38QI0SYvDJMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services-taxtech.vue?macro=true\";\nimport { default as servicesrjfqMcfJRYMeta } from \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services.vue?macro=true\";\nexport default [\n  {\n    name: _91id_93_45_91slug_934FOyTmb9LmMeta?.name ?? \"actualites-id-slug\",\n    path: _91id_93_45_91slug_934FOyTmb9LmMeta?.path ?? \"/actualites/:id()-:slug()\",\n    meta: _91id_93_45_91slug_934FOyTmb9LmMeta || {},\n    alias: _91id_93_45_91slug_934FOyTmb9LmMeta?.alias || [],\n    redirect: _91id_93_45_91slug_934FOyTmb9LmMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id]-[slug].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91id_93QsZ3KMDqqgMeta?.name ?? \"actualites-id\",\n    path: _91id_93QsZ3KMDqqgMeta?.path ?? \"/actualites/:id()\",\n    meta: _91id_93QsZ3KMDqqgMeta || {},\n    alias: _91id_93QsZ3KMDqqgMeta?.alias || [],\n    redirect: _91id_93QsZ3KMDqqgMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/[id].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexnIsavXp0HPMeta?.name ?? \"actualites\",\n    path: indexnIsavXp0HPMeta?.path ?? \"/actualites\",\n    meta: indexnIsavXp0HPMeta || {},\n    alias: indexnIsavXp0HPMeta?.alias || [],\n    redirect: indexnIsavXp0HPMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/actualites/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexLhfPNCBaF2Meta?.name ?? \"admin\",\n    path: indexLhfPNCBaF2Meta?.path ?? \"/admin\",\n    meta: indexLhfPNCBaF2Meta || {},\n    alias: indexLhfPNCBaF2Meta?.alias || [],\n    redirect: indexLhfPNCBaF2Meta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/admin/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91id_93UCA10WYWrvMeta?.name ?? \"blog-id\",\n    path: _91id_93UCA10WYWrvMeta?.path ?? \"/blog/:id()\",\n    meta: _91id_93UCA10WYWrvMeta || {},\n    alias: _91id_93UCA10WYWrvMeta?.alias || [],\n    redirect: _91id_93UCA10WYWrvMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/[id].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexP72lp9qHnCMeta?.name ?? \"blog\",\n    path: indexP72lp9qHnCMeta?.path ?? \"/blog\",\n    meta: indexP72lp9qHnCMeta || {},\n    alias: indexP72lp9qHnCMeta?.alias || [],\n    redirect: indexP72lp9qHnCMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/blog/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: inscription4YRorctSI1Meta?.name ?? \"compte-inscription\",\n    path: inscription4YRorctSI1Meta?.path ?? \"/compte/inscription\",\n    meta: inscription4YRorctSI1Meta || {},\n    alias: inscription4YRorctSI1Meta?.alias || [],\n    redirect: inscription4YRorctSI1Meta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/inscription.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: login3j3TKGzbJeMeta?.name ?? \"compte-login\",\n    path: login3j3TKGzbJeMeta?.path ?? \"/compte/login\",\n    meta: login3j3TKGzbJeMeta || {},\n    alias: login3j3TKGzbJeMeta?.alias || [],\n    redirect: login3j3TKGzbJeMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/login.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: profilnsjeYHulJTMeta?.name ?? \"compte-profil\",\n    path: profilnsjeYHulJTMeta?.path ?? \"/compte/profil\",\n    meta: profilnsjeYHulJTMeta || {},\n    alias: profilnsjeYHulJTMeta?.alias || [],\n    redirect: profilnsjeYHulJTMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/profil.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: contact0m4NbNllXPMeta?.name ?? \"contact\",\n    path: contact0m4NbNllXPMeta?.path ?? \"/contact\",\n    meta: contact0m4NbNllXPMeta || {},\n    alias: contact0m4NbNllXPMeta?.alias || [],\n    redirect: contact0m4NbNllXPMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: contact2rpPMeXjTiEMeta?.name ?? \"contact2\",\n    path: contact2rpPMeXjTiEMeta?.path ?? \"/contact2\",\n    meta: contact2rpPMeXjTiEMeta || {},\n    alias: contact2rpPMeXjTiEMeta?.alias || [],\n    redirect: contact2rpPMeXjTiEMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact2.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91id_93_45_91slug_93bSCJrXLlf5Meta?.name ?? \"event-id-slug\",\n    path: _91id_93_45_91slug_93bSCJrXLlf5Meta?.path ?? \"/event/:id()-:slug()\",\n    meta: _91id_93_45_91slug_93bSCJrXLlf5Meta || {},\n    alias: _91id_93_45_91slug_93bSCJrXLlf5Meta?.alias || [],\n    redirect: _91id_93_45_91slug_93bSCJrXLlf5Meta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id]-[slug].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91id_934aXbWeVI3QMeta?.name ?? \"event-id\",\n    path: _91id_934aXbWeVI3QMeta?.path ?? \"/event/:id()\",\n    meta: _91id_934aXbWeVI3QMeta || {},\n    alias: _91id_934aXbWeVI3QMeta?.alias || [],\n    redirect: _91id_934aXbWeVI3QMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/[id].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexWq3l2PexUMMeta?.name ?? \"event\",\n    path: indexWq3l2PexUMMeta?.path ?? \"/event\",\n    meta: indexWq3l2PexUMMeta || {},\n    alias: indexWq3l2PexUMMeta?.alias || [],\n    redirect: indexWq3l2PexUMMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/event/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: home5cRv8MiyqUMeta?.name ?? \"home\",\n    path: home5cRv8MiyqUMeta?.path ?? \"/home\",\n    meta: home5cRv8MiyqUMeta || {},\n    alias: home5cRv8MiyqUMeta?.alias || [],\n    redirect: home5cRv8MiyqUMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/home.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: immobilierOgoCUkuIGhMeta?.name ?? \"immobilier\",\n    path: immobilierOgoCUkuIGhMeta?.path ?? \"/immobilier\",\n    meta: immobilierOgoCUkuIGhMeta || {},\n    alias: immobilierOgoCUkuIGhMeta?.alias || [],\n    redirect: immobilierOgoCUkuIGhMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/immobilier.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexyqaLT8s91OMeta?.name ?? \"index\",\n    path: indexyqaLT8s91OMeta?.path ?? \"/\",\n    meta: indexyqaLT8s91OMeta || {},\n    alias: indexyqaLT8s91OMeta?.alias || [],\n    redirect: indexyqaLT8s91OMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: index3N1RkeW9PVjMeta?.name ?? \"index3\",\n    path: index3N1RkeW9PVjMeta?.path ?? \"/index3\",\n    meta: index3N1RkeW9PVjMeta || {},\n    alias: index3N1RkeW9PVjMeta?.alias || [],\n    redirect: index3N1RkeW9PVjMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/index3.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: missionWf93wjB1LuMeta?.name ?? \"mission\",\n    path: missionWf93wjB1LuMeta?.path ?? \"/mission\",\n    meta: missionWf93wjB1LuMeta || {},\n    alias: missionWf93wjB1LuMeta?.alias || [],\n    redirect: missionWf93wjB1LuMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mission.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: mot_45ceoUjDSvbr54tMeta?.name ?? \"mot-ceo\",\n    path: mot_45ceoUjDSvbr54tMeta?.path ?? \"/mot-ceo\",\n    meta: mot_45ceoUjDSvbr54tMeta || {},\n    alias: mot_45ceoUjDSvbr54tMeta?.alias || [],\n    redirect: mot_45ceoUjDSvbr54tMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/mot-ceo.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: newsletterh57fZh2HtwMeta?.name ?? \"newsletter\",\n    path: newsletterh57fZh2HtwMeta?.path ?? \"/newsletter\",\n    meta: newsletterh57fZh2HtwMeta || {},\n    alias: newsletterh57fZh2HtwMeta?.alias || [],\n    redirect: newsletterh57fZh2HtwMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/newsletter.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: services_45taxtech38QI0SYvDJMeta?.name ?? \"services-taxtech\",\n    path: services_45taxtech38QI0SYvDJMeta?.path ?? \"/services-taxtech\",\n    meta: services_45taxtech38QI0SYvDJMeta || {},\n    alias: services_45taxtech38QI0SYvDJMeta?.alias || [],\n    redirect: services_45taxtech38QI0SYvDJMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services-taxtech.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: servicesrjfqMcfJRYMeta?.name ?? \"services\",\n    path: servicesrjfqMcfJRYMeta?.path ?? \"/services\",\n    meta: servicesrjfqMcfJRYMeta || {},\n    alias: servicesrjfqMcfJRYMeta?.alias || [],\n    redirect: servicesrjfqMcfJRYMeta?.redirect,\n    component: () => __vitePreload(() => import(\"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/services.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  }\n]",
+      "start": 1709123875125,
+      "end": 1709123875147,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123875217,
+      "end": 1709123875217,
+      "order": "normal"
+    }
+  ]
+}

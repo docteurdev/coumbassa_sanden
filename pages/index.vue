@@ -1,17 +1,16 @@
 <template>
-    
-  <section class="about-section brown">
+
+  <section id="top-header" class="about-section brown">
     <div class="auto-container">
       <div class="row clearfix">
 
         <!-- Content Column -->
         <div class="content-column col-lg-6 col-md-12 col-sm-12">
           <div class="inner-column">
-
             <!-- Sec Title Two -->
             <div class="sec-title-two brown">
               <div class="title">Présentation</div>
-              <h2>Bienvenue sur coumbassa-sanden.com, votre site dédié à !
+              <h2>Bienvenue sur votre site dédié à 
                 <br> la fiscalité
                 <span> en Côte d'Ivoire</span>
               </h2>
@@ -51,17 +50,17 @@
           </div>
         </div>
 
-        <div class="video-column col-lg-6 col-md-12 col-sm-12 pl-5">
+        <div class="video-column col-lg-6 col-md-12 col-sm-12 pl-5 col-sm-pl-0">
           <div class="sec-title-two brown  pl-5">
             <div class="title">News</div>
             <h2>Dernières Actualités</h2>
           </div>
-          <div class="row clearfix pl-5">
+          <div  class="row clearfix pl-5">
             <Swiper
                 :slides-per-view="1"
             >
-              <SwiperSlide v-for="(item, idx) in news" :key="idx">
-                <news-item  :key="item?.id" :news="item" />
+              <SwiperSlide v-for="(item, idx) in actus" :key="idx">
+                <ActusItem  :key="item?.id" :news="item" />
 <!--                <strong>{{ slide }}</strong>-->
               </SwiperSlide>
             </Swiper>
@@ -81,15 +80,16 @@
           <div class="inner-column">
             <div class="row clearfix">
               <!-- Services Block Eleven -->
-              <div class="services-block-eleven col-lg-6 col-md-6 col-sm-12" v-for="item in services">
-                <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+              <div  class="services-block-eleven col-lg-6 col-md-6 col-sm-12" v-for="item in services">
+                <div style="height: 143px;" class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                   <div class="border-one"></div>
                   <div class="border-two"></div>
                   <div class="content">
                     <div class="icon-box">
                       <span class="icon fa fa-bullhorn"></span>
                     </div>
-                    <h6><a href="services-single.html">{{item?.titre}}</a></h6>
+                    <!-- href="services-single.html" -->
+                    <h6><a >{{item?.titre}}</a></h6>
                     <div class="text">{{item?.short}}</div>
                   </div>
                 </div>
@@ -165,14 +165,17 @@
         <div class="image-column col-lg-4 col-md-8 col-sm-12">
           <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image">
-              <img src="images/profil1.png" alt=""/>
-              <div class="overlay-box">
-                <div class="overlay-inner">
-                  <div class="content">
-                    <h2>15 <span>Années d'expérience</span></h2>
+              <li><nuxt-link to="/mot-ceo">
+
+                <img src="/images/profil1.png" alt=""/>
+                <div class="overlay-box">
+                  <div class="overlay-inner">
+                    <div class="content">
+                      <h2>15 <span>Années d'expérience</span></h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </nuxt-link></li>
             </div>
           </div>
         </div>
@@ -198,12 +201,36 @@
 
 <!--    </div>-->
 <!--  </section>-->
-
+<!-- <Map/> -->
 </template>
 
+<style>
+ .auto-container{
+  padding: 0px;
+ }
+
+ @media  screen and (max-width: 476px) {
+  .inner-box{
+    height: auto !important;
+  }
+ }
+
+ @media screen and (max-width:1201px) {
+   .video-column, .clearfix {
+    padding-left: 0 !important;
+   }
+   .auto-container{
+  padding: 0px 15px;
+ }
+ }
+</style>
+
 <script setup>
+import Map from "../components/Map.vue"
+import ActusItem from "../components/ActuItem.vue"
+
 useHead({
-  title: 'Coumbassa-Sanden - la référence affricaine en fiscalité',
+  title: 'Coumbassa-Sanden - la référence africaine en fiscalité',
 })
 const runtimeConfig = useRuntimeConfig()
 const url = runtimeConfig.public.url
@@ -214,9 +241,14 @@ const news = newsList.value['data']
 const {data: pagesList} = await useFetch(() => api+'/blogpages?populate=photo')
 const pages = pagesList.value['data'][0]
 const {data: servicesList} = await useFetch(() => api+'/blogservices')
-const services = servicesList.value['data']
-console.log("services", services)
+const services = servicesList.value['data'];
 
+// ==============
+const {data: actusList} = await useFetch(() => api+'/last-actus?populate=image')
+const actus = actusList.value['data']
+
+
+console.log("services", actusList)
 // change layout on nuxt 3
 // try {
 //   const {data: newsList} = await useFetch(() => 'http://localhost:1337/api/blogs?populate=photo')

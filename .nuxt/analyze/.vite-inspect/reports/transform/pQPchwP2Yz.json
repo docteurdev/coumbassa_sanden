@@ -1,0 +1,218 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/quasar/src/utils/private/define-reactive-plugin.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { reactive } from 'vue'\nimport { injectProp } from './inject-obj-prop.js'\n\nexport default __QUASAR_SSR_SERVER__\n  ? (state, plugin) => {\n      Object.assign(plugin, state)\n      return plugin\n    }\n  : (state, plugin) => {\n      const reactiveState = reactive(state)\n\n      for (const name in state) {\n        injectProp(\n          plugin,\n          name,\n          () => reactiveState[ name ],\n          val => { reactiveState[ name ] = val }\n        )\n      }\n\n      return plugin\n    }\n",
+      "start": 1709123918795,
+      "end": 1709123922743,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123922743,
+      "end": 1709123922743,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123922743,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123922744,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123922744,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123922744,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123922744,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123922744,
+      "end": 1709123922744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { reactive } from \"vue\";\nimport { injectProp } from \"./inject-obj-prop.js\";\nexport default false ? (state, plugin) => {\n  Object.assign(plugin, state);\n  return plugin;\n} : (state, plugin) => {\n  const reactiveState = reactive(state);\n  for (const name in state) {\n    injectProp(\n      plugin,\n      name,\n      () => reactiveState[name],\n      (val) => {\n        reactiveState[name] = val;\n      }\n    );\n  }\n  return plugin;\n};\n",
+      "start": 1709123922744,
+      "end": 1709123927286,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123927286,
+      "end": 1709123927286,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123927286,
+      "end": 1709123927286,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123927286,
+      "end": 1709123927286,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123927286,
+      "end": 1709123927286,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123927286,
+      "end": 1709123927288,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123927288,
+      "end": 1709123927288,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123927288,
+      "end": 1709123927288,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123927288,
+      "end": 1709123927289,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123927289,
+      "end": 1709123927289,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123927290,
+      "end": 1709123927290,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123927291,
+      "end": 1709123927291,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123927291,
+      "end": 1709123927292,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123927292,
+      "end": 1709123927292,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123927292,
+      "end": 1709123927292,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123927292,
+      "end": 1709123927292,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123927292,
+      "end": 1709123927293,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123927293,
+      "end": 1709123927293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123927293,
+      "end": 1709123927293,
+      "order": "normal"
+    }
+  ]
+}

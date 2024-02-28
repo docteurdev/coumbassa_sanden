@@ -1,0 +1,225 @@
+{
+  "resolvedId": "virtual:nuxt:C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/.nuxt/quasar-plugin.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "import { ref, computed, useHead } from \"#imports\"\nimport { defineNuxtPlugin } from \"#app\"\nimport Quasar from \"quasar/src/vue-plugin.js\"\nimport BottomSheet from \"quasar/src/plugins/BottomSheet.js\"\nimport Dialog from \"quasar/src/plugins/Dialog.js\"\nimport Loading from \"quasar/src/plugins/Loading.js\"\nimport LoadingBar from \"quasar/src/plugins/LoadingBar.js\"\nimport Notify from \"quasar/src/plugins/Notify.js\"\nimport Dark from \"quasar/src/plugins/Dark.js\"\nimport lang from \"quasar/lang/en-US\"\nimport iconSet from \"quasar/icon-set/material-icons\"\n\nexport default defineNuxtPlugin((nuxt) => {\n\n\n\n\n  nuxt.vueApp.use(Quasar, {\n    lang,\n    iconSet,\n    plugins: {BottomSheet,Dialog,Loading,LoadingBar,Notify,Dark},\n    \n  })\n})",
+      "start": 1709123836045,
+      "end": 1709123836046,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123836046,
+      "end": 1709123836046,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123836046,
+      "end": 1709123836046,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123836047,
+      "end": 1709123836047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123836048,
+      "end": 1709123836048,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123836049,
+      "end": 1709123836049,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123836050,
+      "end": 1709123836051,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123836051,
+      "end": 1709123836052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123836079,
+      "end": 1709123836079,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123836079,
+      "end": 1709123836079,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123836080,
+      "end": 1709123836080,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123836080,
+      "end": 1709123836080,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123836080,
+      "end": 1709123836080,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123836080,
+      "end": 1709123836080,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123836080,
+      "end": 1709123836081,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { ref, computed } from 'vue';\nimport { useHead } from '@unhead/vue';\nimport { defineNuxtPlugin } from \"#app\"\nimport Quasar from \"quasar/src/vue-plugin.js\"\nimport BottomSheet from \"quasar/src/plugins/BottomSheet.js\"\nimport Dialog from \"quasar/src/plugins/Dialog.js\"\nimport Loading from \"quasar/src/plugins/Loading.js\"\nimport LoadingBar from \"quasar/src/plugins/LoadingBar.js\"\nimport Notify from \"quasar/src/plugins/Notify.js\"\nimport Dark from \"quasar/src/plugins/Dark.js\"\nimport lang from \"quasar/lang/en-US\"\nimport iconSet from \"quasar/icon-set/material-icons\"\n\nexport default defineNuxtPlugin((nuxt) => {\n\n\n\n\n  nuxt.vueApp.use(Quasar, {\n    lang,\n    iconSet,\n    plugins: {BottomSheet,Dialog,Loading,LoadingBar,Notify,Dark},\n    \n  })\n})",
+      "start": 1709123836081,
+      "end": 1709123836289,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C;AACA;AACA;AACA;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjE,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123836290,
+      "end": 1709123836298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123836298,
+      "end": 1709123836298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123836298,
+      "end": 1709123836298,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123836299,
+      "end": 1709123836299,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123836299,
+      "end": 1709123836299,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123836299,
+      "end": 1709123836299,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123836299,
+      "end": 1709123836308,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123836308,
+      "end": 1709123836309,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123836309,
+      "end": 1709123836309,
+      "order": "normal"
+    }
+  ]
+}

@@ -6,6 +6,9 @@ declare module 'nitropack' {
     '/api/base': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/base').default>>>>
     }
+    '/api/mailSender': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/mailSender').default>>>>
+    }
     '/api/user/all': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/user/all').default>>>>
     }
@@ -19,10 +22,10 @@ declare module 'nitropack' {
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-chatgpt/dist/runtime/server/api/chat-completion').default>>>>
     }
     '/_nitro/openapi.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../#internal/nitro/routes/openapi').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nitropack/dist/runtime/routes/openapi').default>>>>
     }
     '/_nitro/swagger': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../#internal/nitro/routes/swagger').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nitropack/dist/runtime/routes/swagger').default>>>>
     }
   }
 }

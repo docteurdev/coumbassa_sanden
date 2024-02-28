@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/components/TheFooter.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <footer class=\"main-footer style-two\">\r\n    <div class=\"footer-bottom\">\r\n      <div class=\"auto-container\">\r\n        <div  class=\"row clearfix\">\r\n\r\n          <!-- Copyright Column -->\r\n          <div style=\"z-index: 10;\" class=\"copyright-column col-lg-6 col-md-6 col-sm-12\">\r\n            <div class=\"copyright\">2023 &copy; Tous droits réservés <a href=\"#\">COUMBASSA & SANDEN</a></div>\r\n          </div>\r\n\r\n          <!-- Social Column -->\r\n          <div style=\"z-index: 10;\"  class=\"social-column col-lg-6 col-md-6 col-sm-12\">\r\n            <ul>\r\n              <li class=\"follow\">Nous suivre: </li>\r\n              <!-- <li><a href=\"#\"><span class=\"fa fa-facebook-square\"></span></a></li>\r\n              <li><a href=\"#\"><span class=\"fa fa-twitter-square\"></span></a></li> -->\r\n              <li><a href=\"https://www.linkedin.com/company/cabinet-coumbassa-sanden/\"><span class=\"fa fa-linkedin-square\"></span></a></li>\r\n              <!-- <li><a href=\"#\"><span class=\"fa fa-google-plus-square\"></span></a></li> -->\r\n              <!-- <li><a href=\"#\"><span class=\"fa fa-rss-square\"></span></a></li> -->\r\n              <li><a href=\"#\"><span class=\"fa fa-globe\"></span></a></li>\r\n\r\n            </ul>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n</template>\r\n",
+      "start": 1709123923605,
+      "end": 1709123929119,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123929120,
+      "end": 1709123929120,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123929120,
+      "end": 1709123929120,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123929120,
+      "end": 1709123929120,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123929120,
+      "end": 1709123929120,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123929121,
+      "end": 1709123929121,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123929121,
+      "end": 1709123929121,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123929121,
+      "end": 1709123929121,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"main-footer style-two\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"footer-bottom\\\"><div class=\\\"auto-container\\\"><div class=\\\"row clearfix\\\"><div style=\\\"z-index:10;\\\" class=\\\"copyright-column col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"copyright\\\">2023 © Tous droits réservés <a href=\\\"#\\\">COUMBASSA &amp; SANDEN</a></div></div><div style=\\\"z-index:10;\\\" class=\\\"social-column col-lg-6 col-md-6 col-sm-12\\\"><ul><li class=\\\"follow\\\">Nous suivre: </li><li><a href=\\\"https://www.linkedin.com/company/cabinet-coumbassa-sanden/\\\"><span class=\\\"fa fa-linkedin-square\\\"></span></a></li><li><a href=\\\"#\\\"><span class=\\\"fa fa-globe\\\"></span></a></li></ul></div></div></div></div>\", 1)\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"footer\", _hoisted_1, _hoisted_3))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123929121,
+      "end": 1709123929135,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123929135,
+      "end": 1709123929135,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123929135,
+      "end": 1709123929135,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123929135,
+      "end": 1709123929136,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123929136,
+      "end": 1709123929136,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123929136,
+      "end": 1709123929136,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123929136,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123929137,
+      "end": 1709123929137,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123929137,
+      "end": 1709123929139,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123929140,
+      "end": 1709123929140,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123929141,
+      "end": 1709123929141,
+      "order": "normal"
+    }
+  ]
+}

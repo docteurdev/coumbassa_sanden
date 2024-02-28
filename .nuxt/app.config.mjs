@@ -1,8 +1,20 @@
 
-import { defuFn } from 'C:/Users/HP/Desktop/projets/next/000/coumbassa-sanden/node_modules/defu/dist/defu.mjs'
+import { updateAppConfig } from '#app/config'
+import { defuFn } from 'defu'
 
-const inlineConfig = {}
+const inlineConfig = {
+  "nuxt": {
+    "buildId": "dev"
+  }
+}
 
-import cfg0 from "C:/Users/HP/Desktop/projets/next/000/coumbassa-sanden/app.config.ts"
+// Vite - webpack is handled directly in #app/config
+if (import.meta.hot) {
+  import.meta.hot.accept((newModule) => {
+    updateAppConfig(newModule.default)
+  })
+}
 
-export default /* #__PURE__ */ defuFn(cfg0, inlineConfig)
+import cfg0 from "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/app.config.ts"
+
+export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

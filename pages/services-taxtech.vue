@@ -27,11 +27,11 @@
                 <div class="auto-container">
                   <div class="row clearfix">
                     <!-- Title Column -->
-                    <div class="title-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="title-column col-lg-12 col-md-12 col-sm-12">
                       <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                          <h2>1er centre de gestion intégrée
+                          <h2 class="">1er centre de gestion intégrée
                             100% dédié à la TVA déductible et au crédit de TVA</h2>
                         </div>
 
@@ -49,13 +49,15 @@
                           <ListIcon text="Scan et archivage électronique de vos factures dans l'ordre des états des taxes déductibles mensuels" />
 
                         </div>
+                        <div class="text-center">
 
-                        <a href="#" class="theme-btn btn-style-six">Let’s start now</a>
+                          <!-- <a href="#" class="theme-btn btn-style-six">Commencer</a> -->
+                        </div>
 
                       </div>
                     </div>
                     <!-- Blocks Column -->
-                    <div class="blocks-column col-lg-6 col-md-12 col-sm-12">
+                    <div v-if="false" class="blocks-column col-lg-6 col-md-12 col-sm-12">
                       <div class="inner-column">
                         <div class="row clearfix">
                           <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -155,10 +157,9 @@
 
 
               <b-tab title-link-class="nav-text" title="TAXTECH ENREGISTREMENT">
-                <!-- <h1>En Cours de Construction</h1> -->
-                <div class="pricings">
+                <h1 class="text-center" >En Cours de Construction</h1>
+                <!-- <div class="pricings">
                   <div class="pricing forfait-one">
-                   <!-- <div class="pricing-top"></div> -->
                    <div class="pricing-top-btn">
                      <p> Forfait 1</p>
                    </div>
@@ -194,7 +195,6 @@
                    </div>
                   </div>
                   <div class="pricing forfait-two">
-                   <!-- <div class="pricing-top"></div> -->
                    <div class="pricing-top-btn">
                     <p>Forfait 2</p>
                    </div>
@@ -229,7 +229,6 @@
                    
                   </div>
                   <div class="pricing forfait-three">
-                   <!-- <div class="pricing-top"></div> -->
                    <div class="pricing-top-btn">
                     <p>Forfait 3</p> 
                    </div>
@@ -263,7 +262,7 @@
                    </div>
                    
                   </div> 
-                </div>
+                </div> -->
 
                   <div class="auto-container" v-if="false">
                   <div class="content">
@@ -405,7 +404,7 @@
 
 
               <b-tab style="color: black" title-link-class="nav-text" title="TAXTECH PROCEDURE" @click="changeColor">
-                <h1>En Cours de Construction</h1>
+                <h1 class="text-center">En Cours de Construction</h1>
                 <div class="auto-container" v-if="false">
                   <div class="row clearfix">
 
@@ -427,7 +426,7 @@
 
                         </div>
 
-                        <a href="#" class="theme-btn btn-style-six">Let’s start now</a>
+                        <a href="#" class="theme-btn btn-style-six">Commencer</a>
 
                       </div>
                     </div>
@@ -532,7 +531,7 @@
 
 
               <b-tab style="color: black" title-link-class="nav-text" title="TAXTECH FONCIER">
-                <h1>En Cours de Construction</h1>
+                <h1 class="text-center">En Cours de Construction</h1>
               </b-tab>
               <!--              <b-tab title-link-class="tab-btn" title="Disabled" disabled><p>I'm a disabled tab!</p></b-tab>-->
             </b-tabs>

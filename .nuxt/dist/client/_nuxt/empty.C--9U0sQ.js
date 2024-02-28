@@ -1,0 +1,1 @@
+import{_ as t,aE as o}from"./entry.CSVvCESN.js";import{J as c,W as n,N as _}from"./swiper-vue.1nsUfrxU.js";const a={},r={class:"page-wrapper"};function s(p,m){const e=o;return c(),n("div",r,[_(e)])}const i=t(a,[["render",s]]);export{i as default};

@@ -1,0 +1,229 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/compte/login.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <section class=\"contact-page-section\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"inner-container\">\r\n        <h2 class=\"text-center\">Login</h2>\r\n        <div class=\"row clearfix\">\r\n\r\n          <!-- Info Column -->\r\n<!--          <div class=\"info-column col-lg-7 col-md-12 col-sm-12\">-->\r\n<!--            <div class=\"inner-column\">-->\r\n<!--              <div class=\"text\">Please contact us using the information below. For additional information on our management consulting services, please visit the appropriate page on our site.</div>-->\r\n<!--              <ul class=\"list-style-five\">-->\r\n<!--                <li><span class=\"icon fa fa-building\"></span> RCI Abidjan Zone 4</li>-->\r\n<!--                <li><span class=\"icon fa fa-fax\"></span> +1 617 572 2000</li>-->\r\n<!--                <li><span class=\"icon fa fa-envelope-o\"></span>contact@coumbassa-sanden.com</li>-->\r\n<!--              </ul>-->\r\n<!--            </div>-->\r\n<!--          </div>-->\r\n\r\n          <!-- Form Column -->\r\n          <div class=\"form-column offset-lg-3 col-lg-6 col-md-12 col-sm-12\">\r\n            <div class=\"inner-column\">\r\n\r\n              <!--Contact Form-->\r\n              <div class=\"contact-form\">\r\n                <form method=\"post\" action=\"sendemail.php\" id=\"contact-form\">\r\n\r\n                  <div class=\"form-group\">\r\n                    <input type=\"text\" name=\"firstname\" value=\"\" placeholder=\"Full name\" required>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <input type=\"text\" name=\"email\" value=\"\" placeholder=\"Email\" required>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <select class=\"custom-select-box\">\r\n                      <option>Select topic</option>\r\n                      <option>Topic One</option>\r\n                      <option>Topic Two</option>\r\n                    </select>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <textarea name=\"message\" placeholder=\"write..\"></textarea>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <button type=\"submit\" class=\"theme-btn \">Envoyer</button>\r\n                  </div>\r\n\r\n                </form>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n</template>\r\n",
+      "start": 1709123880041,
+      "end": 1709123883363,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123883363,
+      "end": 1709123883363,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123883363,
+      "end": 1709123883363,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123883363,
+      "end": 1709123883364,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123883364,
+      "end": 1709123883364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123883364,
+      "end": 1709123883364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123883364,
+      "end": 1709123883364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123883364,
+      "end": 1709123883364,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"contact-page-section\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"auto-container\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"inner-container\" }, [\n    /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-center\" }, \"Login\"),\n    /*#__PURE__*/_createElementVNode(\"div\", { class: \"row clearfix\" }, [\n      /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-column offset-lg-3 col-lg-6 col-md-12 col-sm-12\" }, [\n        /*#__PURE__*/_createElementVNode(\"div\", { class: \"inner-column\" }, [\n          /*#__PURE__*/_createElementVNode(\"div\", { class: \"contact-form\" }, [\n            /*#__PURE__*/_createElementVNode(\"form\", {\n              method: \"post\",\n              action: \"sendemail.php\",\n              id: \"contact-form\"\n            }, [\n              /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                /*#__PURE__*/_createElementVNode(\"input\", {\n                  type: \"text\",\n                  name: \"firstname\",\n                  value: \"\",\n                  placeholder: \"Full name\",\n                  required: \"\"\n                })\n              ]),\n              /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                /*#__PURE__*/_createElementVNode(\"input\", {\n                  type: \"text\",\n                  name: \"email\",\n                  value: \"\",\n                  placeholder: \"Email\",\n                  required: \"\"\n                })\n              ]),\n              /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                /*#__PURE__*/_createElementVNode(\"select\", { class: \"custom-select-box\" }, [\n                  /*#__PURE__*/_createElementVNode(\"option\", null, \"Select topic\"),\n                  /*#__PURE__*/_createElementVNode(\"option\", null, \"Topic One\"),\n                  /*#__PURE__*/_createElementVNode(\"option\", null, \"Topic Two\")\n                ])\n              ]),\n              /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                /*#__PURE__*/_createElementVNode(\"textarea\", {\n                  name: \"message\",\n                  placeholder: \"write..\"\n                })\n              ]),\n              /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                /*#__PURE__*/_createElementVNode(\"button\", {\n                  type: \"submit\",\n                  class: \"theme-btn\"\n                }, \"Envoyer\")\n              ])\n            ])\n          ])\n        ])\n      ])\n    ])\n  ])\n], -1)\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, _hoisted_3))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123883364,
+      "end": 1709123883404,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123883404,
+      "end": 1709123883404,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123883404,
+      "end": 1709123883404,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123883405,
+      "end": 1709123883405,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123883405,
+      "end": 1709123883405,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123883405,
+      "end": 1709123883405,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123883405,
+      "end": 1709123883405,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123883406,
+      "end": 1709123883406,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123883433,
+      "end": 1709123883433,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123883433,
+      "end": 1709123883436,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123883436,
+      "end": 1709123883436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1709123883436,
+      "end": 1709123883448,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123883448,
+      "end": 1709123883448,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123883448,
+      "end": 1709123883448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123883448,
+      "end": 1709123883448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123883448,
+      "end": 1709123883449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123883449,
+      "end": 1709123883449,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123883449,
+      "end": 1709123883449,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123883449,
+      "end": 1709123883449,
+      "order": "normal"
+    }
+  ]
+}

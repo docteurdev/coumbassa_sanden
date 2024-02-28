@@ -1,0 +1,225 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/es-define-property/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict';\n\nvar GetIntrinsic = require('get-intrinsic');\n\n/** @type {import('.')} */\nvar $defineProperty = GetIntrinsic('%Object.defineProperty%', true) || false;\nif ($defineProperty) {\n\ttry {\n\t\t$defineProperty({}, 'a', { value: 1 });\n\t} catch (e) {\n\t\t// IE 8 has a broken defineProperty\n\t\t$defineProperty = false;\n\t}\n}\n\nmodule.exports = $defineProperty;\n",
+      "start": 1709123952220,
+      "end": 1709123952507,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123952507,
+      "end": 1709123952507,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123952507,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123952508,
+      "end": 1709123952508,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/get-intrinsic/index.js?commonjs-proxy\";\n\nvar esDefineProperty;\nvar hasRequiredEsDefineProperty;\n\nfunction requireEsDefineProperty () {\n\tif (hasRequiredEsDefineProperty) return esDefineProperty;\n\thasRequiredEsDefineProperty = 1;\n\t'use strict';\n\n\tvar GetIntrinsic = require$$0;\n\n\t/** @type {import('.')} */\n\tvar $defineProperty = GetIntrinsic('%Object.defineProperty%', true) || false;\n\tif ($defineProperty) {\n\t\ttry {\n\t\t\t$defineProperty({}, 'a', { value: 1 });\n\t\t} catch (e) {\n\t\t\t// IE 8 has a broken defineProperty\n\t\t\t$defineProperty = false;\n\t\t}\n\t}\n\n\tesDefineProperty = $defineProperty;\n\treturn esDefineProperty;\n}\n\nexport { requireEsDefineProperty as __require };",
+      "start": 1709123952508,
+      "end": 1709123952645,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;CAAA,YAAY,CAAC;AACb;CACA,IAAI,YAAY,GAAG,UAAwB,CAAC;AAC5C;CACA;CACA,IAAI,eAAe,GAAG,YAAY,CAAC,yBAAyB,EAAE,IAAI,CAAC,IAAI,KAAK,CAAC;CAC7E,IAAI,eAAe,EAAE;CACrB,CAAC,IAAI;CACL,EAAE,eAAe,CAAC,EAAE,EAAE,GAAG,EAAE,EAAE,KAAK,EAAE,CAAC,EAAE,CAAC,CAAC;CACzC,EAAE,CAAC,OAAO,CAAC,EAAE;CACb;CACA,EAAE,eAAe,GAAG,KAAK,CAAC;CAC1B,EAAE;CACF,CAAC;AACD;AACA,iBAAc,GAAG,eAAe"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123952645,
+      "end": 1709123952645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123952645,
+      "end": 1709123952645,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123952645,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123952646,
+      "end": 1709123952646,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123952646,
+      "end": 1709123952647,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123952647,
+      "end": 1709123952647,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123952647,
+      "end": 1709123952647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123952647,
+      "end": 1709123952647,
+      "order": "normal"
+    }
+  ]
+}

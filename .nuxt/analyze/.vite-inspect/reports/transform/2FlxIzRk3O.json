@@ -1,0 +1,218 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/quasar/src/plugins/LocalStorage.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { client } from './Platform.js'\nimport { getEmptyStorage, getStorage } from '../utils/private/web-storage.js'\n\nconst storage = __QUASAR_SSR_SERVER__ || client.has.webStorage === false\n  ? getEmptyStorage()\n  : getStorage('local')\n\nconst Plugin = {\n  install ({ $q }) {\n    $q.localStorage = storage\n  }\n}\n\nObject.assign(Plugin, storage)\n\nexport default Plugin\n",
+      "start": 1709123887115,
+      "end": 1709123889291,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123889291,
+      "end": 1709123889292,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123889292,
+      "end": 1709123889292,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123889292,
+      "end": 1709123889292,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123889292,
+      "end": 1709123889292,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123889293,
+      "end": 1709123889293,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123889294,
+      "end": 1709123889294,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123889294,
+      "end": 1709123889294,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { client } from \"./Platform.js\";\nimport { getEmptyStorage, getStorage } from \"../utils/private/web-storage.js\";\nconst storage = client.has.webStorage === false ? getEmptyStorage() : getStorage(\"local\");\nconst Plugin = {\n  install({ $q }) {\n    $q.localStorage = storage;\n  }\n};\nObject.assign(Plugin, storage);\nexport default Plugin;\n",
+      "start": 1709123889294,
+      "end": 1709123890645,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123890645,
+      "end": 1709123890645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123890645,
+      "end": 1709123890645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123890645,
+      "end": 1709123890645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123890645,
+      "end": 1709123890645,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123890648,
+      "end": 1709123890663,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123890663,
+      "end": 1709123890663,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123890663,
+      "end": 1709123890663,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123890664,
+      "end": 1709123890664,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123890664,
+      "end": 1709123890665,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123890665,
+      "end": 1709123890665,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123890665,
+      "end": 1709123890675,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123890675,
+      "end": 1709123890675,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123890678,
+      "end": 1709123890678,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123890680,
+      "end": 1709123890681,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123890681,
+      "end": 1709123890681,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123890681,
+      "end": 1709123890682,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123890682,
+      "end": 1709123890682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123890682,
+      "end": 1709123890682,
+      "order": "normal"
+    }
+  ]
+}

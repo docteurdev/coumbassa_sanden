@@ -1,0 +1,216 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/quasar/src/components/table/table-row-selection.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { computed } from 'vue'\n\nexport const useTableRowSelectionProps = {\n  selection: {\n    type: String,\n    default: 'none',\n    validator: v => [ 'single', 'multiple', 'none' ].includes(v)\n  },\n  selected: {\n    type: Array,\n    default: () => []\n  }\n}\n\nexport const useTableRowSelectionEmits = [ 'update:selected', 'selection' ]\n\nexport function useTableRowSelection (props, emit, computedRows, getRowKey) {\n  const selectedKeys = computed(() => {\n    const keys = {}\n    props.selected.map(getRowKey.value).forEach(key => {\n      keys[ key ] = true\n    })\n    return keys\n  })\n\n  const hasSelectionMode = computed(() => {\n    return props.selection !== 'none'\n  })\n\n  const singleSelection = computed(() => {\n    return props.selection === 'single'\n  })\n\n  const multipleSelection = computed(() => {\n    return props.selection === 'multiple'\n  })\n\n  const allRowsSelected = computed(() =>\n    computedRows.value.length !== 0 && computedRows.value.every(\n      row => selectedKeys.value[ getRowKey.value(row) ] === true\n    )\n  )\n\n  const someRowsSelected = computed(() =>\n    allRowsSelected.value !== true\n    && computedRows.value.some(row => selectedKeys.value[ getRowKey.value(row) ] === true)\n  )\n\n  const rowsSelectedNumber = computed(() => props.selected.length)\n\n  function isRowSelected (key) {\n    return selectedKeys.value[ key ] === true\n  }\n\n  function clearSelection () {\n    emit('update:selected', [])\n  }\n\n  function updateSelection (keys, rows, added, evt) {\n    emit('selection', { rows, added, keys, evt })\n\n    const payload = singleSelection.value === true\n      ? (added === true ? rows : [])\n      : (\n          added === true\n            ? props.selected.concat(rows)\n            : props.selected.filter(\n              row => keys.includes(getRowKey.value(row)) === false\n            )\n        )\n\n    emit('update:selected', payload)\n  }\n\n  return {\n    hasSelectionMode,\n    singleSelection,\n    multipleSelection,\n    allRowsSelected,\n    someRowsSelected,\n    rowsSelectedNumber,\n\n    isRowSelected,\n    clearSelection,\n    updateSelection\n  }\n}\n",
+      "start": 1709123934805,
+      "end": 1709123935914,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123935914,
+      "end": 1709123935914,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123935914,
+      "end": 1709123935915,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123935915,
+      "end": 1709123935915,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123935915,
+      "end": 1709123935915,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123935915,
+      "end": 1709123935915,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123935915,
+      "end": 1709123935915,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123935915,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123935916,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123935916,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123935916,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123935916,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123935916,
+      "end": 1709123935916,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123935916,
+      "end": 1709123935917,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123935917,
+      "end": 1709123935917,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123935917,
+      "end": 1709123935917,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123935917,
+      "end": 1709123935917,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123935917,
+      "end": 1709123935917,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123935917,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123935918,
+      "end": 1709123935918,
+      "order": "normal"
+    }
+  ]
+}

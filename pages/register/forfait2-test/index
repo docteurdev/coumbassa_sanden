@@ -1,0 +1,353 @@
+<template>
+ <h1>TAXTECH ENREGISTREMENT FORFAIT 2</h1>
+ <div style="margin-top: 5rem;" v-if="submited">
+
+<Recu />
+</div>
+ <div class="form-wrapper" v-else>
+   <q-form class="q-gutter-m form" >
+     <div class="input-text-bx">
+       <div class="num">
+         <h4>01</h4>
+       </div>
+       <q-input
+         class="input-text"
+         filled
+         type="text"
+         v-model="contratNom"
+         label="Saissisez l'intitulé de votre contrat"
+         hint="REPONSE LIBRE"
+       />
+     </div>
+
+     <div v-if="contratNom" class="">
+     <CheckItem
+       @changing-input="question1"
+       :text="twoText"
+       num="02"
+       order="02"
+     />
+     <div v-if="twoIsWorking"  class="">
+       
+       <CheckItem
+         v-if="twoValue ==='no'"
+         @changing-input="question1"
+         :text="threeText"
+         num="03"
+         order="03"
+       />
+
+       <!-- v-if="twoValue ==='yes'" -->
+       <CheckItem
+         @changing-input="question1"
+         :text="orderText"
+         num="04"
+         :order="order"
+  
+       />
+     </div>
+
+   </div>
+
+   </q-form>
+ </div>
+</template>
+<style scoped>
+.form-wrapper {
+ /* border: 1px solid red; */
+}
+
+.form {
+ /* border: 1px solid red; */
+}
+
+.cust-input input {
+ display: none;
+ cursor: pointer;
+}
+
+.cust-input {
+ cursor: pointer;
+ border: 1px solid #ad8e63;
+ margin-left: -0.5rem !important;
+ padding: 12px 20px;
+ border-radius: 6px;
+}
+
+.btn-bx {
+ text-align: right;
+ padding-right: 1rem;
+}
+
+.cust-btn {
+ width: 300px;
+ padding: 15px 0;
+ margin-top: 10px;
+ background-color: #ad8e63 !important;
+}
+
+h1 {
+ text-align: center;
+ margin-top: 12rem;
+}
+.form {
+ /* border: 1px solid red; */
+ width: 800px;
+ margin: 3rem auto;
+}
+
+.input-bx {
+ width: 80%;
+}
+
+.input-bx p {
+ font-weight: 600;
+}
+
+.input-text-bx {
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+
+.input-text {
+ width: 94%;
+}
+
+.input-date{
+ margin-bottom: 22px;
+}
+
+.input-bx input {
+ width: 100%;
+ border: 2px solid #ccc;
+ outline: none;
+ padding: 12px;
+ border-radius: 6px;
+}
+
+.num {
+ width: 60px;
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ background-color: rgb(242 242 242);
+ margin-left: -0.7rem;
+ margin-bottom: 1.5rem;
+}
+
+.num h4 {
+ margin: 0;
+}
+
+/* media queries */
+
+@media screen and (max-width: 860px) {
+ h1 {
+   margin-top: 0.5rem;
+ }
+
+ .form {
+   width: 80%;
+ }
+
+ .btn-bx {
+   text-align: center;
+   padding: 1rem 0;
+ }
+
+ .input-text-bx {
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 1.5em;
+ }
+
+ .input-text {
+   width: 100%;
+ }
+
+ .num {
+   margin-bottom: -5px;
+ }
+
+ button.bg-primary:hover{
+ background-color: #272727 !important;
+}
+
+}
+</style>
+<script>
+import CheckItem from "../../components/register/CheckItem.vue";
+import FileItem from "../../components/register/FileItem.vue";
+import Recu from "../../components/Recu.vue"
+import axios from "axios";
+import { useQuasar } from 'quasar'
+
+
+
+export default {
+ components: {
+   CheckItem,
+   FileItem,
+   Recu
+ },
+ data() {
+   return {
+     $q : useQuasar(),
+    
+     contratNom: "",
+     twoIsWorking: false,
+
+     twoValue: "",
+     twoText:"Votre contrat est -il déjà enregistré au centre des impôts?",
+
+     threeValue: "",
+     threeText:"La location porte t-elle uniquement sur la location d'un bien immobilier(Terrain, Bureaux, Hangars, Dépôts, etc.)?",
+ 
+     order: "03",
+     orderText:"La location porte t-elle sur des éléments mobiliers et fonds de commerce?",
+     
+
+   };
+ },
+ methods: {
+  
+   question1(res) {
+
+     switch (res.num) {
+       case "02":
+        
+       this.twoIsWorking = true;
+       if (res.value) {
+        this.twoValue = "yes"
+        this.order = "03"
+       }
+       if (!res.value) {
+        this.twoValue = "no"
+        this.order = "04"
+
+       }
+       break;
+
+       case "03":
+        this.threeValue = res.value
+
+       break;
+
+       case "04":
+        
+          // when answer 02 yes and answer 04 yes 
+        if(this.twoValue === 'yes' && res.value){
+          console.log(res);
+          const route =`/register/forfait2-test/options/`
+          this.$router.push({path: `${route}'option1'`, query:
+           { 
+             contrat_nom: this.contratNom,
+             q2:{
+              value: this.twoValue,
+              text: this.twoText
+
+             }, 
+             q3:{
+              value: this.threeValue,
+              text: this.threeText
+             },
+             order: {
+              value: this.order,
+              text: this.orderText
+             }
+           }}
+           )
+        }
+        // when answer 02 non and answer 04 yes 
+        if(this.twoValue === 'no' && res.value){
+          console.log(res);
+          const route =`/register/forfait2-test/options/`
+          this.$router.push({path: `${route}option2`, query:
+           { 
+             contrat_nom: this.contratNom,
+             q2:{
+              value: this.twoValue,
+              text: this.twoText
+
+             }, 
+             q3:{
+              value: this.threeValue,
+              text: this.threeText
+             },
+             order: {
+              value: this.order,
+              text: this.orderText
+             }
+           }}
+           )
+        }
+
+          // when answer 02 yes and answer 04 no 
+          if(this.twoValue === 'yes' && !res.value){
+          console.log(res);
+          const route =`/register/forfait2-test/options/`
+          this.$router.push({path: `${route}option3`, query:
+           { 
+             contrat_nom: this.contratNom,
+             q2:{
+              value: this.twoValue,
+              text: this.twoText
+
+             }, 
+             q3:{
+              value: this.threeValue,
+              text: this.threeText
+             },
+             order: {
+              value: this.order,
+              text: this.orderText
+             }
+           }}
+           )
+        }
+
+         // when answer 02 no and answer 04 no 
+         if(this.twoValue === 'no' && !res.value){
+          console.log(res);
+          const route =`/register/forfait2-test/options/`
+          this.$router.push({path: `${route}option4`, query:
+           { 
+             contrat_nom: this.contratNom,
+             q2:{
+              value: this.twoValue,
+              text: this.twoText
+
+             }, 
+             q3:{
+              value: this.threeValue,
+              text: this.threeText
+             },
+             order: {
+              value: this.order,
+              text: this.orderText
+             }
+           }}
+           )
+        }
+       break;
+     }
+   },
+   toasted(icon, mgs, color, action){
+     this.$q.notify({
+         color:  color? color : null,
+         message: mgs,
+         position: "top",
+         icon:icon? "report_problem" : "",
+         multiLine: true,
+         actions: action && [
+          {label: "Forfait 1", color:"orange", round: true, handler: () => navigateTo("/register/forfait1")},
+          {icon: "close", color:"white", handler: () => null},
+         ]
+       })
+   }
+ },
+};
+</script>

@@ -2,6 +2,17 @@
 // @ts-ignore
 export default defineNuxtConfig(<any>{
     ssr: false,
+    // module:[
+    //     ['nuxt-mail', {
+    //         message: {
+    //           to: 'adjeoumar@gmail.com',
+    //         },
+    //         smtp: {
+    //           host: "smtp.example.com",
+    //           port: 587,
+    //         },
+    //       }],
+    // ],
     runtimeConfig: {
         apiSecret: '123',
         strapi: {
@@ -56,7 +67,11 @@ export default defineNuxtConfig(<any>{
     nitro: {
         preset: 'node-server',
         experimental: {openAPI: true, payloadExtraction: true},
-        prerender: { crawlLinks: true, ignore: ['/dynamic'] },
+        prerender: {
+            crawlLinks: true,
+            routes:['/mailSender'],
+            ignore: ['/dynamic']
+        },
     },
     vite: {
         define: {
@@ -122,4 +137,7 @@ export default defineNuxtConfig(<any>{
     //     bootstrapCSSsss: true, // Or `css: false`
     //     bootstrapVueCSS: true // Or `bvCSS: false`
     // }
+    serverMiddleware: [
+        // '~/server/middleware/scrap',
+      ],
 })

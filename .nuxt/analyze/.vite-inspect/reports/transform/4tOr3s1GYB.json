@@ -1,0 +1,216 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/vue-client-recaptcha/dist/vue-client-recaptcha.es.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "/*\n * vue-client-recaptcha\n * Creator:parsajiravand\n * Build simple recaptcha for vuejs without need server\n * v1.1.4\n * MIT License\n */\n\nimport { defineComponent, useSlots, ref, onMounted, watchEffect, watch, openBlock, createBlock, h } from \"vue\";\nvar vueClientRecaptcha_vue_vue_type_style_index_0_lang = \"\";\nconst _sfc_main = /* @__PURE__ */ defineComponent({\n  props: {\n    value: { default: \"\" },\n    chars: { default: \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\" },\n    count: { default: 5 },\n    hideLines: { type: Boolean, default: false },\n    customTextColor: { default: \"\" },\n    textColors: { default: () => [] },\n    isDirty: { type: Boolean, default: true },\n    width: { default: function(props) {\n      return props.count * 30;\n    } },\n    height: { default: 50 },\n    canvasClass: { default: \"\" },\n    icon: { default: \"refresh\" },\n    captchaFont: { default: \"bold 28px sans-serif\" }\n  },\n  emits: [\"isValid\", \"getCode\", \"update:modelValue\"],\n  setup(__props, { emit }) {\n    const props = __props;\n    const slots = useSlots();\n    const captcha_canvas = ref();\n    let code = ref(\"\");\n    let canvasWidth = props.width;\n    let canvasHeight = props.height;\n    onMounted(() => {\n      captcha();\n    });\n    const captcha = () => {\n      captcha_canvas.value.width = canvasWidth;\n      captcha_canvas.value.height = canvasHeight;\n      let ctx = captcha_canvas.value.getContext(\"2d\");\n      for (let i = 0; i < props.count; i++) {\n        let sIndex = Math.floor(Math.random() * props.chars.length);\n        let sDeg = Math.random() * 30 * Math.PI / 180;\n        let cTxt = props.chars[sIndex];\n        code.value += cTxt;\n        let x = 10 + i * 25;\n        let y = 30 + Math.random() * 8;\n        ctx.font = props.captchaFont;\n        ctx.translate(x, y);\n        if (props.customTextColor) {\n          ctx.fillStyle = props.customTextColor;\n        } else if (props.textColors.length) {\n          ctx.fillStyle = props.textColors[Math.floor(Math.random() * props.textColors.length)];\n        } else {\n          ctx.fillStyle = randomColor();\n        }\n        ctx.rotate(sDeg);\n        ctx.fillText(cTxt, 0, 0);\n        ctx.rotate(-sDeg);\n        ctx.translate(-x, -y);\n      }\n      if (!props.hideLines) {\n        createLines();\n      }\n      sendValueToParent();\n    };\n    const createLines = () => {\n      let ctx = captcha_canvas.value.getContext(\"2d\");\n      for (let i = 0; i < props.count; i++) {\n        ctx.strokeStyle = randomColor();\n        ctx.beginPath();\n        ctx.moveTo(Math.random() * canvasWidth, Math.random() * canvasHeight);\n        ctx.lineTo(Math.random() * canvasWidth, Math.random() * canvasHeight);\n        ctx.stroke();\n      }\n    };\n    const sendValueToParent = () => {\n      emit(\"getCode\", code.value);\n    };\n    watchEffect(() => {\n      if (code.value && code.value === props.value) {\n        emit(\"isValid\", true);\n      } else {\n        emit(\"isValid\", false);\n      }\n    });\n    watch(code, (value) => {\n      emit(\"update:modelValue\", value);\n    });\n    const randomColor = () => {\n      let r = Math.floor(Math.random() * 256);\n      let g = Math.floor(Math.random() * 256);\n      let b = Math.floor(Math.random() * 256);\n      return \"rgb(\" + r + \",\" + g + \",\" + b + \")\";\n    };\n    const resetCaptcha = () => {\n      let ctx = captcha_canvas.value.getContext(\"2d\");\n      ctx.clearRect(0, 0, canvasWidth, canvasHeight);\n      code.value = \"\";\n      captcha();\n    };\n    const render = () => {\n      return h(\"div\", { class: \"vue_client_recaptcha\" }, [\n        h(\"div\", { class: \"vue_client_recaptcha_icon\", onClick: () => resetCaptcha() }, [\n          h(slots.icon ? slots.icon : \"svg\", {\n            class: \"vue_client_recaptcha_icon_svg\",\n            width: \"24\",\n            height: \"24\",\n            viewBox: \"0 0 24 24\",\n            fill: \"none\",\n            xmlns: \"http://www.w3.org/2000/svg\"\n          }, [\n            h(\"path\", {\n              d: \"M2 12a9 9 0 0 0 9 9c2.39 0 4.68-.94 6.4-2.6l-1.5-1.5A6.706 6.706 0 0 1 11 19c-6.24 0-9.36-7.54-4.95-11.95C10.46 2.64 18 5.77 18 12h-3l4 4h.1l3.9-4h-3a9 9 0 0 0-18 0Z\",\n              fill: \"#333333\"\n            })\n          ])\n        ]),\n        h(\"canvas\", {\n          id: \"captcha_canvas\",\n          class: `captcha_canvas ${props.canvasClass}`,\n          ref: captcha_canvas\n        }, code.value)\n      ]);\n    };\n    return (_ctx, _cache) => {\n      return openBlock(), createBlock(render);\n    };\n  }\n});\nexport { _sfc_main as default };\n",
+      "start": 1709123919506,
+      "end": 1709123924258,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123924258,
+      "end": 1709123924258,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123924258,
+      "end": 1709123924258,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123924258,
+      "end": 1709123924258,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123924258,
+      "end": 1709123924258,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123924258,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123924259,
+      "end": 1709123924259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123924259,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123924260,
+      "end": 1709123924260,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123924260,
+      "end": 1709123924267,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123924267,
+      "end": 1709123924267,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123924267,
+      "end": 1709123924268,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123924268,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123924269,
+      "end": 1709123924269,
+      "order": "normal"
+    }
+  ]
+}

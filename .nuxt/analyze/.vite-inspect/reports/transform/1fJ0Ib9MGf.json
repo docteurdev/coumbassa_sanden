@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/components/Map.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "\r\n\r\n<template>\r\n  <div class=\"map-wrap\">\r\n    <div class=\"map\" ref=\"mapContainer\"></div>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';\r\nimport { Map, MapStyle, Marker, config } from '@maptiler/sdk';\r\nimport '@maptiler/sdk/dist/maptiler-sdk.css';\r\n\r\nconst mapContainer = shallowRef(null);\r\nconst map = shallowRef(null);\r\n\r\nonMounted(() => {\r\n  config.apiKey = 'ENGF65bMzOmea275pBpc';\r\n\r\n  const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };\r\n  // const initialState = { lng: 5.280955, lat: -3.971126, zoom: 14 };\r\n\r\n\r\n  map.value = markRaw(new Map({\r\n    container: mapContainer.value,\r\n    style: MapStyle.STREETS,\r\n    center: [initialState.lng, initialState.lat],\r\n    zoom: initialState.zoom\r\n  }));\r\n\r\n  new Marker({color: \"#FF0000\"})\r\n  .setLngLat([139.7525,35.6846])\r\n  .addTo(map.value);\r\n\r\n}),\r\nonUnmounted(() => {\r\n  map.value?.remove();\r\n})\r\n</script>\r\n\r\n<style scoped>\r\n.map-wrap {\r\n  position: relative;\r\n  width: 100%;\r\n  height: calc(100vh - 77px); /* calculate height of the screen minus the heading */\r\n}\r\n\r\n.map {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n</style>",
+      "start": 1709123920875,
+      "end": 1709123924507,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123924507,
+      "end": 1709123924507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-714b4d14\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"map-wrap\" }\n\nimport { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';\r\nimport { Map, MapStyle, Marker, config } from '@maptiler/sdk';\r\nimport '@maptiler/sdk/dist/maptiler-sdk.css';\r\n\r\n\nconst _sfc_main = {\n  __name: 'Map',\n  setup(__props) {\n\r\nconst mapContainer = shallowRef(null);\r\nconst map = shallowRef(null);\r\n\r\nonMounted(() => {\r\n  config.apiKey = 'ENGF65bMzOmea275pBpc';\r\n\r\n  const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };\r\n  // const initialState = { lng: 5.280955, lat: -3.971126, zoom: 14 };\r\n\r\n\r\n  map.value = markRaw(new Map({\r\n    container: mapContainer.value,\r\n    style: MapStyle.STREETS,\r\n    center: [initialState.lng, initialState.lat],\r\n    zoom: initialState.zoom\r\n  }));\r\n\r\n  new Marker({color: \"#FF0000\"})\r\n  .setLngLat([139.7525,35.6846])\r\n  .addTo(map.value);\r\n\r\n}),\r\nonUnmounted(() => {\r\n  map.value?.remove();\r\n})\r\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", {\n      class: \"map\",\n      ref_key: \"mapContainer\",\n      ref: mapContainer\n    }, null, 512)\n  ]))\n}\n}\n\n}\n\n\nimport \"C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/components/Map.vue?vue&type=style&index=0&scoped=714b4d14&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-714b4d14\"]])",
+      "start": 1709123924507,
+      "end": 1709123924575,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123924576,
+      "end": 1709123924576,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123924576,
+      "end": 1709123924576,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123924576,
+      "end": 1709123924576,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123924576,
+      "end": 1709123924576,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123924576,
+      "end": 1709123924576,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123924576,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123924577,
+      "end": 1709123924577,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123924577,
+      "end": 1709123924582,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123924582,
+      "end": 1709123924582,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123924582,
+      "end": 1709123924582,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123924582,
+      "end": 1709123924583,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123924583,
+      "end": 1709123924583,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123924583,
+      "end": 1709123924583,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123924583,
+      "end": 1709123924583,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123924583,
+      "end": 1709123924583,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123924583,
+      "end": 1709123924584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123924584,
+      "end": 1709123924909,
+      "order": "normal"
+    }
+  ]
+}

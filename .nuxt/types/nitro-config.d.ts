@@ -3,7 +3,7 @@
 // App Config
 import type { Defu } from 'defu'
 
-import type { default as appConfig0 } from "C:/Users/HP/Desktop/projets/next/000/coumbassa-sanden/app.config";
+import type { default as appConfig0 } from "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/app.config";
 
 type UserAppConfig = Defu<{}, [typeof appConfig0]>
 

@@ -1,0 +1,229 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/admin/index.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div>\r\n    <nuxt-layout :name=\"'admin'\">\r\n      <div class=\"row justify-center\">\r\n        <div class=\"col-12 q-mt-md\">\r\n          <q-btn label=\"Ajouter\" class=\"q-mb-lg\" size=\"sm\" icon=\"add\" color=\"secondary\" v-on:click=\"bientypesModal = true\" />\r\n          <br><br>\r\n          <q-table title=\"bientypess\" :rows=\"bientypess\" :columns=\"columns\" :filter=\"filter\"\r\n                   :pagination=\"pagination\" row-key=\"name\" flat>\r\n            <template v-slot:top=\"props\">\r\n              <div class=\"col-7 q-table__title\">Liste des bientypes</div>\r\n              <q-input dense debounce=\"300\" v-model=\"filter\" placeholder=\"Rechercher\" />\r\n            </template>\r\n            <template v-slot:body=\"props\">\r\n              <q-tr :props=\"props\">\r\n                <q-td key='libelle' :props='props'> {{props.row.libelle}} </q-td>\r\n                <q-td key='createdAt' :props='props'> {{props.row.createdAt}} </q-td>\r\n                <q-td key='updated_at' :props='props'> {{props.row.updated_at}} </q-td>\r\n                <q-td key='published_at' :props='props'> {{props.row.published_at}} </q-td>\r\n                <q-td key='created_by_id' :props='props'> {{props.row.created_by_id}} </q-td>\r\n                <q-td key='updated_by_id' :props='props'> {{props.row.updated_by_id}} </q-td>\r\n\r\n                <q-td key=\"actions\" :props=\"props\">\r\n                  <q-btn class=\"q-mr-xs\" size=\"xs\" color=\"primary\" v-on:click=\"update_get(props.row)\" icon=\"edit\"></q-btn>\r\n                  <q-btn class=\"q-mr-xs\" size=\"xs\" color=\"red\" v-on:click=\"bientypes_delete(props.row.id)\" icon=\"delete\"></q-btn>\r\n                </q-td>\r\n              </q-tr>\r\n            </template>\r\n          </q-table>\r\n        </div>\r\n      </div>\r\n      <q-dialog v-model=\"bientypesModal\">\r\n        <q-card style=\"width: 700px; max-width: 90vw; padding: 10px\">\r\n          <q-card-section>\r\n            <div class=\"text-h6\">Ajouter un Bientypes</div>\r\n          </q-card-section>\r\n          <q-card-section>\r\n            <q-form  @submit=\"onSubmit\">\r\n              <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                  <q-input outlined dense v-model='bientypes.libelle' label='libelle' />\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                  <q-btn color=\"primary\" label=\"Valider\" type=\"submit\" />\r\n                </div>\r\n              </div>\r\n            </q-form>\r\n          </q-card-section>\r\n          <q-card-actions align=\"right\" class=\"bg-white text-teal\">\r\n            <q-btn flat label=\"Fermer\" v-close-popup />\r\n          </q-card-actions>\r\n        </q-card>\r\n      </q-dialog>\r\n    </nuxt-layout>\r\n\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport {BientypesApi} from '/services/api/BientypesApi'\r\nexport default {\r\n  layout: 'admin',\r\n  data () {\r\n    return {\r\n      bientypesId: 1,\r\n      bientypes: {},\r\n      bientypess: [],\r\n      bientypesModal: false,\r\n      columns: [\r\n        { name: 'id', align: 'left', label: 'id', field: 'id', sortable: true },\r\n        { name: 'libelle', align: 'left', label: 'libelle', field: 'libelle', sortable: true },\r\n        { name: 'createdAt', align: 'left', label: 'createdAt', field: 'createdAt', sortable: true },\r\n        { name: 'updated_at', align: 'left', label: 'updated_at', field: 'updated_at', sortable: true },\r\n        { name: 'published_at', align: 'left', label: 'published_at', field: 'published_at', sortable: true },\r\n        { name: 'created_by_id', align: 'left', label: 'created_by_id', field: 'created_by_id', sortable: true },\r\n        { name: 'updated_by_id', align: 'left', label: 'updated_by_id', field: 'updated_by_id', sortable: true },\r\n        { name: 'actions', align: 'left', label: 'Actions' }\r\n      ],\r\n      filter: '',\r\n      pagination: { sortBy: 'name', descending: false, page: 1, rowsPerPage: 10 }\r\n    }\r\n  },\r\n  created () {\r\n    this.bientypes_get()\r\n  },\r\n  methods: {\r\n    update_get (props) {\r\n      this.bientypes = props\r\n      this.bientypesModal = true\r\n    },\r\n    async bientypes_get () {\r\n      const res = await BientypesApi.get()\r\n      this.bientypess = res['data'];\r\n      console.log(this.bientypess)\r\n    },\r\n    onSubmit () {\r\n      if (this.bientypes.id) {\r\n        this.bientypes_update(this.bientypes.id)\r\n      } else {\r\n        this.bientypes_post()\r\n      }\r\n    },\r\n    async bientypes_post () {\r\n      console.log(\"post\")\r\n      await BientypesApi.postApi({data: this.bientypes}, true, true)\r\n      await BientypesApi.get()\r\n    },\r\n    async bientypes_update (_id) {\r\n      console.log(\"put\")\r\n      await BientypesApi.putApi(_id, {data: this.bientypes}, true, true)\r\n      await BientypesApi.get()\r\n    },\r\n    async bientypes_delete (_id) {\r\n      console.log(\"delete\")\r\n      await BientypesApi.deleteApi(_id, true, true)\r\n      await BientypesApi.get()\r\n    }\r\n  }\r\n}\r\n</script>\r\n",
+      "start": 1709123878159,
+      "end": 1709123882410,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123882410,
+      "end": 1709123882410,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123882410,
+      "end": 1709123882410,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123882410,
+      "end": 1709123882410,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123882410,
+      "end": 1709123882410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123882410,
+      "end": 1709123882410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123882411,
+      "end": 1709123882411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123882411,
+      "end": 1709123882411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport {BientypesApi} from '/services/api/BientypesApi'\r\nconst _sfc_main = {\r\n  layout: 'admin',\r\n  data () {\r\n    return {\r\n      bientypesId: 1,\r\n      bientypes: {},\r\n      bientypess: [],\r\n      bientypesModal: false,\r\n      columns: [\r\n        { name: 'id', align: 'left', label: 'id', field: 'id', sortable: true },\r\n        { name: 'libelle', align: 'left', label: 'libelle', field: 'libelle', sortable: true },\r\n        { name: 'createdAt', align: 'left', label: 'createdAt', field: 'createdAt', sortable: true },\r\n        { name: 'updated_at', align: 'left', label: 'updated_at', field: 'updated_at', sortable: true },\r\n        { name: 'published_at', align: 'left', label: 'published_at', field: 'published_at', sortable: true },\r\n        { name: 'created_by_id', align: 'left', label: 'created_by_id', field: 'created_by_id', sortable: true },\r\n        { name: 'updated_by_id', align: 'left', label: 'updated_by_id', field: 'updated_by_id', sortable: true },\r\n        { name: 'actions', align: 'left', label: 'Actions' }\r\n      ],\r\n      filter: '',\r\n      pagination: { sortBy: 'name', descending: false, page: 1, rowsPerPage: 10 }\r\n    }\r\n  },\r\n  created () {\r\n    this.bientypes_get()\r\n  },\r\n  methods: {\r\n    update_get (props) {\r\n      this.bientypes = props\r\n      this.bientypesModal = true\r\n    },\r\n    async bientypes_get () {\r\n      const res = await BientypesApi.get()\r\n      this.bientypess = res['data'];\r\n      console.log(this.bientypess)\r\n    },\r\n    onSubmit () {\r\n      if (this.bientypes.id) {\r\n        this.bientypes_update(this.bientypes.id)\r\n      } else {\r\n        this.bientypes_post()\r\n      }\r\n    },\r\n    async bientypes_post () {\r\n      console.log(\"post\")\r\n      await BientypesApi.postApi({data: this.bientypes}, true, true)\r\n      await BientypesApi.get()\r\n    },\r\n    async bientypes_update (_id) {\r\n      console.log(\"put\")\r\n      await BientypesApi.putApi(_id, {data: this.bientypes}, true, true)\r\n      await BientypesApi.get()\r\n    },\r\n    async bientypes_delete (_id) {\r\n      console.log(\"delete\")\r\n      await BientypesApi.deleteApi(_id, true, true)\r\n      await BientypesApi.get()\r\n    }\r\n  }\r\n}\r\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, resolveDirective as _resolveDirective, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"row justify-center\" }\nconst _hoisted_2 = { class: \"col-12 q-mt-md\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"br\", null, null, -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"br\", null, null, -1)\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"col-7 q-table__title\" }, \"Liste des bientypes\", -1)\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-h6\" }, \"Ajouter un Bientypes\", -1)\nconst _hoisted_7 = { class: \"row\" }\nconst _hoisted_8 = { class: \"col-12\" }\nconst _hoisted_9 = { class: \"row\" }\nconst _hoisted_10 = { class: \"col-12\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_q_btn = _resolveComponent(\"q-btn\")\n  const _component_q_input = _resolveComponent(\"q-input\")\n  const _component_q_td = _resolveComponent(\"q-td\")\n  const _component_q_tr = _resolveComponent(\"q-tr\")\n  const _component_q_table = _resolveComponent(\"q-table\")\n  const _component_q_card_section = _resolveComponent(\"q-card-section\")\n  const _component_q_form = _resolveComponent(\"q-form\")\n  const _component_q_card_actions = _resolveComponent(\"q-card-actions\")\n  const _component_q_card = _resolveComponent(\"q-card\")\n  const _component_q_dialog = _resolveComponent(\"q-dialog\")\n  const _component_nuxt_layout = _resolveComponent(\"nuxt-layout\")\n  const _directive_close_popup = _resolveDirective(\"close-popup\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_nuxt_layout, { name: 'admin' }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createElementVNode(\"div\", _hoisted_2, [\n            _createVNode(_component_q_btn, {\n              label: \"Ajouter\",\n              class: \"q-mb-lg\",\n              size: \"sm\",\n              icon: \"add\",\n              color: \"secondary\",\n              onClick: _cache[0] || (_cache[0] = $event => ($data.bientypesModal = true))\n            }),\n            _hoisted_3,\n            _hoisted_4,\n            _createVNode(_component_q_table, {\n              title: \"bientypess\",\n              rows: $data.bientypess,\n              columns: $data.columns,\n              filter: $data.filter,\n              pagination: $data.pagination,\n              \"row-key\": \"name\",\n              flat: \"\"\n            }, {\n              top: _withCtx((props) => [\n                _hoisted_5,\n                _createVNode(_component_q_input, {\n                  dense: \"\",\n                  debounce: \"300\",\n                  modelValue: $data.filter,\n                  \"onUpdate:modelValue\": _cache[1] || (_cache[1] = $event => (($data.filter) = $event)),\n                  placeholder: \"Rechercher\"\n                }, null, 8, [\"modelValue\"])\n              ]),\n              body: _withCtx((props) => [\n                _createVNode(_component_q_tr, { props: props }, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_q_td, {\n                      key: \"libelle\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.libelle), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"createdAt\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.createdAt), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"updated_at\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.updated_at), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"published_at\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.published_at), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"created_by_id\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.created_by_id), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"updated_by_id\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(props.row.updated_by_id), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"]),\n                    _createVNode(_component_q_td, {\n                      key: \"actions\",\n                      props: props\n                    }, {\n                      default: _withCtx(() => [\n                        _createVNode(_component_q_btn, {\n                          class: \"q-mr-xs\",\n                          size: \"xs\",\n                          color: \"primary\",\n                          onClick: $event => ($options.update_get(props.row)),\n                          icon: \"edit\"\n                        }, null, 8, [\"onClick\"]),\n                        _createVNode(_component_q_btn, {\n                          class: \"q-mr-xs\",\n                          size: \"xs\",\n                          color: \"red\",\n                          onClick: $event => ($options.bientypes_delete(props.row.id)),\n                          icon: \"delete\"\n                        }, null, 8, [\"onClick\"])\n                      ]),\n                      _: 2\n                    }, 1032, [\"props\"])\n                  ]),\n                  _: 2\n                }, 1032, [\"props\"])\n              ]),\n              _: 1\n            }, 8, [\"rows\", \"columns\", \"filter\", \"pagination\"])\n          ])\n        ]),\n        _createVNode(_component_q_dialog, {\n          modelValue: $data.bientypesModal,\n          \"onUpdate:modelValue\": _cache[3] || (_cache[3] = $event => (($data.bientypesModal) = $event))\n        }, {\n          default: _withCtx(() => [\n            _createVNode(_component_q_card, { style: {\"width\":\"700px\",\"max-width\":\"90vw\",\"padding\":\"10px\"} }, {\n              default: _withCtx(() => [\n                _createVNode(_component_q_card_section, null, {\n                  default: _withCtx(() => [\n                    _hoisted_6\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_q_card_section, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_q_form, { onSubmit: $options.onSubmit }, {\n                      default: _withCtx(() => [\n                        _createElementVNode(\"div\", _hoisted_7, [\n                          _createElementVNode(\"div\", _hoisted_8, [\n                            _createVNode(_component_q_input, {\n                              outlined: \"\",\n                              dense: \"\",\n                              modelValue: $data.bientypes.libelle,\n                              \"onUpdate:modelValue\": _cache[2] || (_cache[2] = $event => (($data.bientypes.libelle) = $event)),\n                              label: \"libelle\"\n                            }, null, 8, [\"modelValue\"])\n                          ])\n                        ]),\n                        _createElementVNode(\"div\", _hoisted_9, [\n                          _createElementVNode(\"div\", _hoisted_10, [\n                            _createVNode(_component_q_btn, {\n                              color: \"primary\",\n                              label: \"Valider\",\n                              type: \"submit\"\n                            })\n                          ])\n                        ])\n                      ]),\n                      _: 1\n                    }, 8, [\"onSubmit\"])\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_q_card_actions, {\n                  align: \"right\",\n                  class: \"bg-white text-teal\"\n                }, {\n                  default: _withCtx(() => [\n                    _withDirectives(_createVNode(_component_q_btn, {\n                      flat: \"\",\n                      label: \"Fermer\"\n                    }, null, 512), [\n                      [_directive_close_popup]\n                    ])\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        }, 8, [\"modelValue\"])\n      ]),\n      _: 1\n    })\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123882411,
+      "end": 1709123882510,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123882510,
+      "end": 1709123882510,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123882510,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123882511,
+      "end": 1709123882511,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123882511,
+      "end": 1709123882512,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123882512,
+      "end": 1709123882545,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123882545,
+      "end": 1709123882545,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1709123882545,
+      "end": 1709123882554,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123882554,
+      "end": 1709123882555,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123882555,
+      "end": 1709123882555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123882564,
+      "end": 1709123882565,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123882565,
+      "end": 1709123882565,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123882565,
+      "end": 1709123882565,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123882565,
+      "end": 1709123882565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123882565,
+      "end": 1709123882565,
+      "order": "normal"
+    }
+  ]
+}

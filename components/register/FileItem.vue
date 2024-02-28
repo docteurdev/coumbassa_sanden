@@ -1,15 +1,21 @@
 <template>
+  <div class="">
+
     <label class="cust-input" for="file-me">
-        {{this.file? this.file.name : 'Transmettez une copie du bail'}} <q-icon name="attach_file" size="md" />
-        <input @input="handleFile" type="file" name="" id="file-me">
+        {{this.file? this.file.name : label? label : 'Transmettez une copie du bail'}} <q-icon name="attach_file" size="md" />
+        <input @input="handleFile" type="file" name="" id="file-me"> 
       </label>
+      <p class="text-danger">Types de formats acceptés (pdf, png, jpeg), taille maximale 5MO </p>
+  </div>
  </template>
 
  <script>
   export default{
 
     emits: ["handle-file"],
-
+    props:{
+        label: {type: String, required: false},
+    },
     data(){
     return{
       file: null
@@ -28,6 +34,13 @@
 
 .cust-input input{
  display: none !important;
+
+}
+.cust-input {
+  border: 1px solid #ad8e63;
+  padding: 12px 20px;
+  border-radius: 6px;
+
 }
 
 @media screen and  (max-width:860PX) {

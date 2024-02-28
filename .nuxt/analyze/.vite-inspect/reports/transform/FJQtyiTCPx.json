@@ -1,0 +1,225 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/has-property-descriptors/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict';\n\nvar $defineProperty = require('es-define-property');\n\nvar hasPropertyDescriptors = function hasPropertyDescriptors() {\n\treturn !!$defineProperty;\n};\n\nhasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBug() {\n\t// node v0.6 has a bug where array lengths can be Set but not Defined\n\tif (!$defineProperty) {\n\t\treturn null;\n\t}\n\ttry {\n\t\treturn $defineProperty([], 'length', { value: 1 }).length !== 1;\n\t} catch (e) {\n\t\t// In Firefox 4-22, defining length on an array throws an exception.\n\t\treturn true;\n\t}\n};\n\nmodule.exports = hasPropertyDescriptors;\n",
+      "start": 1709123952557,
+      "end": 1709123952606,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123952606,
+      "end": 1709123952606,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123952606,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123952607,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123952607,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123952607,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123952607,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123952607,
+      "end": 1709123952607,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123952607,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123952608,
+      "end": 1709123952608,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __require as require$$0 } from \"\\u0000C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/node_modules/es-define-property/index.js?commonjs-wrapped\";\n\n'use strict';\n\nvar $defineProperty = require$$0();\n\nvar hasPropertyDescriptors = function hasPropertyDescriptors() {\n\treturn !!$defineProperty;\n};\n\nhasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBug() {\n\t// node v0.6 has a bug where array lengths can be Set but not Defined\n\tif (!$defineProperty) {\n\t\treturn null;\n\t}\n\ttry {\n\t\treturn $defineProperty([], 'length', { value: 1 }).length !== 1;\n\t} catch (e) {\n\t\t// In Firefox 4-22, defining length on an array throws an exception.\n\t\treturn true;\n\t}\n};\n\nvar hasPropertyDescriptors_1 = hasPropertyDescriptors;\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(hasPropertyDescriptors_1);\nexport { hasPropertyDescriptors_1 as __moduleExports };",
+      "start": 1709123952608,
+      "end": 1709123952650,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;AAAA,YAAY,CAAC;AACb;AACA,IAAI,eAAe,GAAG,YAA6B,CAAC;AACpD;AACA,IAAI,sBAAsB,GAAG,SAAS,sBAAsB,GAAG;AAC/D,CAAC,OAAO,CAAC,CAAC,eAAe,CAAC;AAC1B,CAAC,CAAC;AACF;AACA,sBAAsB,CAAC,uBAAuB,GAAG,SAAS,uBAAuB,GAAG;AACpF;AACA,CAAC,IAAI,CAAC,eAAe,EAAE;AACvB,EAAE,OAAO,IAAI,CAAC;AACd,EAAE;AACF,CAAC,IAAI;AACL,EAAE,OAAO,eAAe,CAAC,EAAE,EAAE,QAAQ,EAAE,EAAE,KAAK,EAAE,CAAC,EAAE,CAAC,CAAC,MAAM,KAAK,CAAC,CAAC;AAClE,EAAE,CAAC,OAAO,CAAC,EAAE;AACb;AACA,EAAE,OAAO,IAAI,CAAC;AACd,EAAE;AACF,CAAC,CAAC;AACF;IACA,wBAAc,GAAG,sBAAsB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123952651,
+      "end": 1709123952651,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123952651,
+      "end": 1709123952651,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123952651,
+      "end": 1709123952651,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123952651,
+      "end": 1709123952651,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123952651,
+      "end": 1709123952651,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123952652,
+      "end": 1709123952652,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123952652,
+      "end": 1709123952653,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123952653,
+      "end": 1709123952653,
+      "order": "normal"
+    }
+  ]
+}

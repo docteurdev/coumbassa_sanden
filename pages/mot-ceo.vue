@@ -35,6 +35,17 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+
+@media screen and (max-width: 400px) {
+  .video-box{
+    margin-left: 4%;
+  }
+  
+}
+</style>
+
 <script setup>
 useHead({
   title: 'Mot du CEO',

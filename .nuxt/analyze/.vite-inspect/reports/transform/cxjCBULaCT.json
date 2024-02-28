@@ -1,0 +1,216 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/services/api/BaseApi.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {deleteApi, getApi, postApi} from \"./apiService\";\r\nimport {Loading, QSpinnerBall} from 'quasar'\r\n\r\nclass BaseApi {\r\n\r\n  static async get (table) {\r\n    return new Promise((resolve, reject) => {\r\n      getApi('/'+ table )\r\n        .then(response => resolve(response) )\r\n        .catch(error => reject(error));\r\n    });\r\n  }\r\n\r\n  static async getId (table, id) {\r\n    return new Promise((resolve, reject) => {\r\n      getApi('/'+ table+'/'+id )\r\n        .then(response => resolve(response) )\r\n        .catch(error => reject(error));\r\n    });\r\n  }\r\n\r\n  static async search (table, params) {\r\n    return new Promise((resolve, reject) => {\r\n      postApi('/my/search/'+ table, params )\r\n        .then(response => resolve(response) )\r\n        .catch(error => reject(error));\r\n    });\r\n  }\r\n\r\n  static async post(table, params) {\r\n    return new Promise( resolve => {\r\n      postApi('/my/post/' +table, params)\r\n        .then((response) => {\r\n          return resolve(response)\r\n        }).catch((error) => {\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n  static async update(table, params) {\r\n    return new Promise( resolve => {\r\n      putApi('/' + table + '/'+id, params)\r\n        .then((response) => {\r\n          return resolve(response)\r\n        }).catch((error) => {\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n  static async delete(table, id) {\r\n    return new Promise( resolve => {\r\n      deleteApi('/'+ table +'/'+id)\r\n        .then((response) => {\r\n          return resolve(response)\r\n        }).catch((error) => {\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n\r\n  static async getApi (url, params, loading=false, notify=false) {\r\n    if (loading)\r\n      Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})\r\n    return new Promise((resolve, reject) => {\r\n      getApi(url, params )\r\n        .then((response) => {\r\n          Loading.hide()\r\n          resolve(response)\r\n        })\r\n        .catch((error) => {\r\n          Loading.hide()\r\n          reject(error)\r\n        });\r\n    });\r\n  }\r\n  static async postApi(url, params, loading=false, notify=false) {\r\n    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})\r\n    return new Promise( resolve => {\r\n      postApi(url, params)\r\n        .then((response) => {\r\n          Loading.hide()\r\n          return resolve(response)\r\n        }).catch((error) => {\r\n        Loading.hide()\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n  static async putApi(url, params, loading=false, notify=false) {\r\n    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})\r\n    return new Promise( resolve => {\r\n      putApi(url, params)\r\n          .then((response) => {\r\n            Loading.hide()\r\n            return resolve(response)\r\n          }).catch((error) => {\r\n        Loading.hide()\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n\r\n  static async deleteApi(url, params, loading=false, notify=false) {\r\n    if (loading) Loading.show({spinner: QSpinnerBall, spinnerColor: 'primary'})\r\n    return new Promise( resolve => {\r\n      deleteApi(url, params)\r\n          .then((response) => {\r\n            Loading.hide()\r\n            return resolve(response)\r\n          }).catch((error) => {\r\n        Loading.hide()\r\n        return resolve(error)\r\n      });\r\n    })\r\n  }\r\n\r\n}\r\n\r\nexport {BaseApi};\r\n\r\n\r\n",
+      "start": 1709123937269,
+      "end": 1709123939411,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123939411,
+      "end": 1709123939411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123939411,
+      "end": 1709123939412,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123939412,
+      "end": 1709123939412,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123939413,
+      "end": 1709123939413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123939413,
+      "end": 1709123939448,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123939448,
+      "end": 1709123939448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123939448,
+      "end": 1709123939448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123939448,
+      "end": 1709123939448,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123939448,
+      "end": 1709123939448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123939448,
+      "end": 1709123939450,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123939450,
+      "end": 1709123939450,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123939450,
+      "end": 1709123939450,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123939450,
+      "end": 1709123939451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123939451,
+      "end": 1709123939451,
+      "order": "normal"
+    }
+  ]
+}

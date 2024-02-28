@@ -1,0 +1,228 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/services/utils.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export function slugify(str) {\r\n    return String(str)\r\n        .normalize('NFKD') // split accented characters into their base characters and diacritical marks\r\n        .replace(/[\\u0300-\\u036f]/g, '') // remove all the accents, which happen to be all in the \\u03xx UNICODE block.\r\n        .trim() // trim leading or trailing whitespace\r\n        .toLowerCase() // convert to lowercase\r\n        .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters\r\n        .replace(/\\s+/g, '-') // replace spaces with hyphens\r\n        .replace(/-+/g, '-'); // remove consecutive hyphens\r\n}\r\n",
+      "start": 1709123937088,
+      "end": 1709123939297,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123939298,
+      "end": 1709123939298,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123939298,
+      "end": 1709123939298,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123939298,
+      "end": 1709123939298,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123939298,
+      "end": 1709123939298,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export function slugify(str) {\n  return String(str).normalize(\"NFKD\").replace(/[\\u0300-\\u036f]/g, \"\").trim().toLowerCase().replace(/[^a-z0-9 -]/g, \"\").replace(/\\s+/g, \"-\").replace(/-+/g, \"-\");\n}\n",
+      "start": 1709123939298,
+      "end": 1709123945505,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/services/utils.ts"
+        ],
+        "sourcesContent": [
+          "export function slugify(str) {\r\n    return String(str)\r\n        .normalize('NFKD') // split accented characters into their base characters and diacritical marks\r\n        .replace(/[\\u0300-\\u036f]/g, '') // remove all the accents, which happen to be all in the \\u03xx UNICODE block.\r\n        .trim() // trim leading or trailing whitespace\r\n        .toLowerCase() // convert to lowercase\r\n        .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters\r\n        .replace(/\\s+/g, '-') // replace spaces with hyphens\r\n        .replace(/-+/g, '-'); // remove consecutive hyphens\r\n}\r\n"
+        ],
+        "mappings": "AAAO,gBAAS,QAAQ,KAAK;AACzB,SAAO,OAAO,GAAG,EACZ,UAAU,MAAM,EAChB,QAAQ,oBAAoB,EAAE,EAC9B,KAAK,EACL,YAAY,EACZ,QAAQ,gBAAgB,EAAE,EAC1B,QAAQ,QAAQ,GAAG,EACnB,QAAQ,OAAO,GAAG;AAC3B;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123945505,
+      "end": 1709123945505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123945505,
+      "end": 1709123945505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709123945505,
+      "end": 1709123945505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123945505,
+      "end": 1709123945505,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123945509,
+      "end": 1709123945509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123945509,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123945510,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123945510,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123945510,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123945510,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123945510,
+      "end": 1709123945510,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123945510,
+      "end": 1709123945511,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123945511,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123945520,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709123945520,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123945520,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123945520,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123945520,
+      "end": 1709123945520,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123945520,
+      "end": 1709123945521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123945521,
+      "end": 1709123945521,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123945521,
+      "end": 1709123945521,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123945521,
+      "end": 1709123945521,
+      "order": "normal"
+    }
+  ]
+}

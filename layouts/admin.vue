@@ -34,7 +34,7 @@
             <div class="sidebar-widget banner-widget">
               <div class="widget-content" style="background-image:url('/images/resource/service-15.jpg')">
                 <div class="logo">
-                  <img src="images/icons/widget-logo.png" alt="">
+                  <img src="/images/icons/widget-logo.png" alt="">
                 </div>
                 <div class="title">Securied Business with</div>
                 <h2>Financ</h2>

@@ -1,0 +1,229 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/home.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\r\n\r\n  <section class=\"about-section brown\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"row clearfix\">\r\n\r\n        <!-- Content Column -->\r\n        <div class=\"content-column col-lg-6 col-md-12 col-sm-12\">\r\n          <div class=\"inner-column\">\r\n\r\n            <!-- Sec Title Two -->\r\n            <div class=\"sec-title-two brown\">\r\n              <div class=\"title\">about us</div>\r\n              <h2>We are here to manage your <br> finance with <span>experience</span></h2>\r\n            </div>\r\n\r\n            <div class=\"text\">\r\n              <p>The argument in favor of using filler text goes something like this: If you use real content in the <a href=\"#\">design process,</a> anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>\r\n              <p>Aenean tincidunt id mauris id auctor. Donec at ligula lacus. Nulla dignissim mi quis neque interdum, quis porta sem finibus.\r\n              </p>\r\n            </div>\r\n            <div class=\"row clearfix\">\r\n              <div class=\"column col-lg-6 col-md-6 col-sm-12\">\r\n                <ul class=\"list-style-one\">\r\n                  <li>Praesent feugiat sem mattis.</li>\r\n                </ul>\r\n              </div>\r\n              <div class=\"column col-lg-6 col-md-6 col-sm-12\">\r\n                <ul class=\"list-style-one\">\r\n                  <li>A wonderful serenity.</li>\r\n                </ul>\r\n              </div>\r\n              <div class=\"column col-lg-6 col-md-6 col-sm-12\">\r\n                <ul class=\"list-style-one\">\r\n                  <li>Premium services beyond you.</li>\r\n                </ul>\r\n              </div>\r\n              <div class=\"column col-lg-6 col-md-6 col-sm-12\">\r\n                <ul class=\"list-style-one\">\r\n                  <li>Set a link back to this photo.</li>\r\n                </ul>\r\n              </div>\r\n            </div>\r\n            <div class=\"question\">Call to ask <a href=\"#\">any question</a> <strong>540-325-1523</strong> <span class=\"or\">or</span> <strong>540-328-1265</strong></div>\r\n            <div class=\"signature\">\r\n              <div class=\"signature-img\"><img src=\"/images/icons/signature-1.png\" alt=\"\"/></div>\r\n              <h5>Natalia Duke</h5>\r\n              <div class=\"designation\">(Chairman and founder)</div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- Video Column -->\r\n        <div class=\"video-column col-lg-6 col-md-12 col-sm-12\">\r\n          <div class=\"inner-column\">\r\n\r\n            <!--Video Box-->\r\n            <div class=\"video-box\">\r\n              <figure class=\"image\">\r\n                <img src=\"/images/resource/video-img.jpg\" alt=\"\">\r\n              </figure>\r\n              <a href=\"https://www.youtube.com/watch?v=kxPCFljwJws\" class=\"lightbox-image overlay-box\"><span class=\"flaticon-play-button\"></span></a>\r\n            </div>\r\n\r\n            <div class=\"fact-counter\">\r\n              <div class=\"auto-container\">\r\n                <div class=\"row clearfix\">\r\n\r\n                  <!--Column-->\r\n                  <div class=\"column counter-column col-lg-4 col-md-6 col-sm-12\">\r\n                    <div class=\"inner wow fadeInLeft\" data-wow-delay=\"0ms\" data-wow-duration=\"1500ms\">\r\n                      <div class=\"count-outer count-box\">\r\n                        <span class=\"count-text\" data-speed=\"2000\" data-stop=\"1235\">0</span>\r\n                        <h4 class=\"counter-title\">Satisfied Clients</h4>\r\n                        <div class=\"text\">Dolore magna aliq</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!--Column-->\r\n                  <div class=\"column counter-column col-lg-4 col-md-6 col-sm-12\">\r\n                    <div class=\"inner wow fadeInLeft\" data-wow-delay=\"300ms\" data-wow-duration=\"1500ms\">\r\n                      <div class=\"count-outer count-box\">\r\n                        <span class=\"count-text\" data-speed=\"3500\" data-stop=\"1402\">0</span>+\r\n                        <h4 class=\"counter-title\">Completed works</h4>\r\n                        <div class=\"text\">consectetur adipisicing</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <!--Column-->\r\n                  <div class=\"column counter-column col-lg-4 col-md-12 col-sm-12\">\r\n                    <div class=\"inner wow fadeInLeft\" data-wow-delay=\"600ms\" data-wow-duration=\"1500ms\">\r\n                      <div class=\"count-outer count-box\">\r\n                        <span class=\"count-text\" data-speed=\"2000\" data-stop=\"35\">0</span>\r\n                        <h4 class=\"counter-title\">Winning Awards</h4>\r\n                        <div class=\"text\">Lorem ipsum dolor</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <section class=\"services-section-eight\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"row clearfix\">\r\n        <!-- Content Column -->\r\n        <div class=\"content-column col-lg-8 col-md-12 col-sm-12\">\r\n          <div class=\"inner-column\">\r\n            <div class=\"row clearfix\">\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"0ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-bullhorn\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Market Research</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"300ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-suitcase\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Business Planning</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"600ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-area-chart\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Investment Trade</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"900ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-coffee\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Fund Management</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"1200ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-building\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Home loan</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              <!-- Services Block Eleven -->\r\n              <div class=\"services-block-eleven col-lg-6 col-md-6 col-sm-12\">\r\n                <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"1500ms\" data-wow-duration=\"1500ms\">\r\n                  <div class=\"border-one\"></div>\r\n                  <div class=\"border-two\"></div>\r\n                  <div class=\"content\">\r\n                    <div class=\"icon-box\">\r\n                      <span class=\"icon fa fa-pie-chart\"></span>\r\n                    </div>\r\n                    <h6><a href=\"services-single.html\">Insurance Service</a></h6>\r\n                    <div class=\"text\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- Image Column -->\r\n        <div class=\"image-column col-lg-4 col-md-8 col-sm-12\">\r\n          <div class=\"inner-column wow fadeInRight\" data-wow-delay=\"0ms\" data-wow-duration=\"1500ms\">\r\n            <div class=\"image\">\r\n              <img src=\"/images/resource/service-5.jpg\" alt=\"\"/>\r\n              <div class=\"overlay-box\">\r\n                <div class=\"overlay-inner\">\r\n                  <div class=\"content\">\r\n                    <h2>15 <span>d'année d'experience</span></h2>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- News Section Two -->\r\n  <section class=\"news-section-two alternate\">\r\n    <div class=\"auto-container\">\r\n      <!-- Sec Title -->\r\n      <div class=\"sec-title-two centered\">\r\n        <div class=\"title\">latest Blog</div>\r\n        <h2>Learn some new info from <br> our latest <span>news</span></h2>\r\n        <div class=\"text\">The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you <br> reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</div>\r\n      </div>\r\n\r\n      <div class=\"row clearfix\">\r\n\r\n        <!-- News Block Two -->\r\n        <div class=\"news-block-two brown col-lg-4 col-md-6 col-sm-12\">\r\n          <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"0ms\" data-wow-duration=\"1500ms\">\r\n            <div class=\"image\">\r\n              <img src=\"/images/resource/news-4.jpg\" alt=\"\" />\r\n              <div class=\"overlay-box\">\r\n                <a href=\"/images/resource/news-4.jpg\" data-fancybox=\"news\" data-caption=\"\" class=\"plus flaticon-plus-symbol\"></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"lower-content\">\r\n              <ul class=\"post-meta\">\r\n                <li><span class=\"fa fa-calendar\"></span>September 12, 2019</li>\r\n                <li><span class=\"fa fa-user\"></span>Admin</li>\r\n              </ul>\r\n              <h5><a href=\"blog-single.html\">Strategy for Norway's Peion Fund Global.</a></h5>\r\n              <a href=\"blog-single.html\" class=\"theme-btn btn-style-ten\">View more</a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- News Block Two -->\r\n        <div class=\"news-block-two brown col-lg-4 col-md-6 col-sm-12\">\r\n          <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"300ms\" data-wow-duration=\"1500ms\">\r\n            <div class=\"image\">\r\n              <img src=\"/images/resource/news-5.jpg\" alt=\"\" />\r\n              <div class=\"overlay-box\">\r\n                <a href=\"/images/resource/news-5.jpg\" data-fancybox=\"news\" data-caption=\"\" class=\"plus flaticon-plus-symbol\"></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"lower-content\">\r\n              <ul class=\"post-meta\">\r\n                <li><span class=\"fa fa-calendar\"></span>September 12, 2019</li>\r\n                <li><span class=\"fa fa-user\"></span>Admin</li>\r\n              </ul>\r\n              <h5><a href=\"blog-single.html\">What we are capable of usually gets discovered.</a></h5>\r\n              <a href=\"blog-single.html\" class=\"theme-btn btn-style-ten\">View more</a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- News Block Two -->\r\n        <div class=\"news-block-two brown col-lg-4 col-md-6 col-sm-12\">\r\n          <div class=\"inner-box wow fadeInUp\" data-wow-delay=\"600ms\" data-wow-duration=\"1500ms\">\r\n            <div class=\"image\">\r\n              <img src=\"/images/resource/news-6.jpg\" alt=\"\" />\r\n              <div class=\"overlay-box\">\r\n                <a href=\"/images/resource/news-6.jpg\" data-fancybox=\"news\" data-caption=\"\" class=\"plus flaticon-plus-symbol\"></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"lower-content\">\r\n              <ul class=\"post-meta\">\r\n                <li><span class=\"fa fa-calendar\"></span>September 12, 2019</li>\r\n                <li><span class=\"fa fa-user\"></span>Admin</li>\r\n              </ul>\r\n              <h5><a href=\"blog-single.html\">Food industry leaders often change their promoters.</a></h5>\r\n              <a href=\"blog-single.html\" class=\"theme-btn btn-style-ten\">View more</a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </div>\r\n  </section>\r\n\r\n</template>\r\n<script>\r\nexport default {\r\n  head() {\r\n    return {\r\n      title: 'Nuxt Starter',\r\n      script: [\r\n        { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js' },\r\n        { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js' },\r\n        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js' },\r\n      ]\r\n    }\r\n  }\r\n}\r\n</script>\r\n<!--<script setup lang=\"ts\">-->\r\n\r\n<!--import {useCounter} from \"~/stores/counter\";-->\r\n<!--const counter = useCounter()-->\r\n\r\n\r\n<!--// if (process.server) {-->\r\n<!--//   counter.n = 20-->\r\n<!--// }-->\r\n<!--</script>-->\r\n",
+      "start": 1709123880938,
+      "end": 1709123884462,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123884462,
+      "end": 1709123884462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nconst _sfc_main = {\r\n  head() {\r\n    return {\r\n      title: 'Nuxt Starter',\r\n      script: [\r\n        { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js' },\r\n        { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js' },\r\n        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js' },\r\n      ]\r\n    }\r\n  }\r\n}\r\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, createStaticVNode as _createStaticVNode } from \"vue\"\nimport _imports_0 from '/images/icons/signature-1.png'\nimport _imports_1 from '/images/resource/video-img.jpg'\nimport _imports_2 from '/images/resource/service-5.jpg'\nimport _imports_3 from '/images/resource/news-4.jpg'\nimport _imports_4 from '/images/resource/news-5.jpg'\nimport _imports_5 from '/images/resource/news-6.jpg'\n\n\nconst _hoisted_1 = /*#__PURE__*/_createStaticVNode(\"<section class=\\\"about-section brown\\\"><div class=\\\"auto-container\\\"><div class=\\\"row clearfix\\\"><div class=\\\"content-column col-lg-6 col-md-12 col-sm-12\\\"><div class=\\\"inner-column\\\"><div class=\\\"sec-title-two brown\\\"><div class=\\\"title\\\">about us</div><h2>We are here to manage your <br> finance with <span>experience</span></h2></div><div class=\\\"text\\\"><p>The argument in favor of using filler text goes something like this: If you use real content in the <a href=\\\"#\\\">design process,</a> anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p><p>Aenean tincidunt id mauris id auctor. Donec at ligula lacus. Nulla dignissim mi quis neque interdum, quis porta sem finibus. </p></div><div class=\\\"row clearfix\\\"><div class=\\\"column col-lg-6 col-md-6 col-sm-12\\\"><ul class=\\\"list-style-one\\\"><li>Praesent feugiat sem mattis.</li></ul></div><div class=\\\"column col-lg-6 col-md-6 col-sm-12\\\"><ul class=\\\"list-style-one\\\"><li>A wonderful serenity.</li></ul></div><div class=\\\"column col-lg-6 col-md-6 col-sm-12\\\"><ul class=\\\"list-style-one\\\"><li>Premium services beyond you.</li></ul></div><div class=\\\"column col-lg-6 col-md-6 col-sm-12\\\"><ul class=\\\"list-style-one\\\"><li>Set a link back to this photo.</li></ul></div></div><div class=\\\"question\\\">Call to ask <a href=\\\"#\\\">any question</a> <strong>540-325-1523</strong> <span class=\\\"or\\\">or</span> <strong>540-328-1265</strong></div><div class=\\\"signature\\\"><div class=\\\"signature-img\\\"><img src=\\\"\" + _imports_0 + \"\\\" alt=\\\"\\\"></div><h5>Natalia Duke</h5><div class=\\\"designation\\\">(Chairman and founder)</div></div></div></div><div class=\\\"video-column col-lg-6 col-md-12 col-sm-12\\\"><div class=\\\"inner-column\\\"><div class=\\\"video-box\\\"><figure class=\\\"image\\\"><img src=\\\"\" + _imports_1 + \"\\\" alt=\\\"\\\"></figure><a href=\\\"https://www.youtube.com/watch?v=kxPCFljwJws\\\" class=\\\"lightbox-image overlay-box\\\"><span class=\\\"flaticon-play-button\\\"></span></a></div><div class=\\\"fact-counter\\\"><div class=\\\"auto-container\\\"><div class=\\\"row clearfix\\\"><div class=\\\"column counter-column col-lg-4 col-md-6 col-sm-12\\\"><div class=\\\"inner wow fadeInLeft\\\" data-wow-delay=\\\"0ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"count-outer count-box\\\"><span class=\\\"count-text\\\" data-speed=\\\"2000\\\" data-stop=\\\"1235\\\">0</span><h4 class=\\\"counter-title\\\">Satisfied Clients</h4><div class=\\\"text\\\">Dolore magna aliq</div></div></div></div><div class=\\\"column counter-column col-lg-4 col-md-6 col-sm-12\\\"><div class=\\\"inner wow fadeInLeft\\\" data-wow-delay=\\\"300ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"count-outer count-box\\\"><span class=\\\"count-text\\\" data-speed=\\\"3500\\\" data-stop=\\\"1402\\\">0</span>+ <h4 class=\\\"counter-title\\\">Completed works</h4><div class=\\\"text\\\">consectetur adipisicing</div></div></div></div><div class=\\\"column counter-column col-lg-4 col-md-12 col-sm-12\\\"><div class=\\\"inner wow fadeInLeft\\\" data-wow-delay=\\\"600ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"count-outer count-box\\\"><span class=\\\"count-text\\\" data-speed=\\\"2000\\\" data-stop=\\\"35\\\">0</span><h4 class=\\\"counter-title\\\">Winning Awards</h4><div class=\\\"text\\\">Lorem ipsum dolor</div></div></div></div></div></div></div></div></div></div></div></section><section class=\\\"services-section-eight\\\"><div class=\\\"auto-container\\\"><div class=\\\"row clearfix\\\"><div class=\\\"content-column col-lg-8 col-md-12 col-sm-12\\\"><div class=\\\"inner-column\\\"><div class=\\\"row clearfix\\\"><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"0ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-bullhorn\\\"></span></div><h6><a href=\\\"services-single.html\\\">Market Research</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"300ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-suitcase\\\"></span></div><h6><a href=\\\"services-single.html\\\">Business Planning</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"600ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-area-chart\\\"></span></div><h6><a href=\\\"services-single.html\\\">Investment Trade</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"900ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-coffee\\\"></span></div><h6><a href=\\\"services-single.html\\\">Fund Management</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"1200ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-building\\\"></span></div><h6><a href=\\\"services-single.html\\\">Home loan</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div><div class=\\\"services-block-eleven col-lg-6 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"1500ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"border-one\\\"></div><div class=\\\"border-two\\\"></div><div class=\\\"content\\\"><div class=\\\"icon-box\\\"><span class=\\\"icon fa fa-pie-chart\\\"></span></div><h6><a href=\\\"services-single.html\\\">Insurance Service</a></h6><div class=\\\"text\\\">Lorem ipsum dolor sit amet, con sectetu adipiscing elit, sed do eius mod tempor incididunt.</div></div></div></div></div></div></div><div class=\\\"image-column col-lg-4 col-md-8 col-sm-12\\\"><div class=\\\"inner-column wow fadeInRight\\\" data-wow-delay=\\\"0ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"image\\\"><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\"><div class=\\\"overlay-box\\\"><div class=\\\"overlay-inner\\\"><div class=\\\"content\\\"><h2>15 <span>d&#39;année d&#39;experience</span></h2></div></div></div></div></div></div></div></div></section><section class=\\\"news-section-two alternate\\\"><div class=\\\"auto-container\\\"><div class=\\\"sec-title-two centered\\\"><div class=\\\"title\\\">latest Blog</div><h2>Learn some new info from <br> our latest <span>news</span></h2><div class=\\\"text\\\">The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you <br> reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</div></div><div class=\\\"row clearfix\\\"><div class=\\\"news-block-two brown col-lg-4 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"0ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"image\\\"><img src=\\\"\" + _imports_3 + \"\\\" alt=\\\"\\\"><div class=\\\"overlay-box\\\"><a href=\\\"/images/resource/news-4.jpg\\\" data-fancybox=\\\"news\\\" data-caption=\\\"\\\" class=\\\"plus flaticon-plus-symbol\\\"></a></div></div><div class=\\\"lower-content\\\"><ul class=\\\"post-meta\\\"><li><span class=\\\"fa fa-calendar\\\"></span>September 12, 2019</li><li><span class=\\\"fa fa-user\\\"></span>Admin</li></ul><h5><a href=\\\"blog-single.html\\\">Strategy for Norway&#39;s Peion Fund Global.</a></h5><a href=\\\"blog-single.html\\\" class=\\\"theme-btn btn-style-ten\\\">View more</a></div></div></div><div class=\\\"news-block-two brown col-lg-4 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"300ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"image\\\"><img src=\\\"\" + _imports_4 + \"\\\" alt=\\\"\\\"><div class=\\\"overlay-box\\\"><a href=\\\"/images/resource/news-5.jpg\\\" data-fancybox=\\\"news\\\" data-caption=\\\"\\\" class=\\\"plus flaticon-plus-symbol\\\"></a></div></div><div class=\\\"lower-content\\\"><ul class=\\\"post-meta\\\"><li><span class=\\\"fa fa-calendar\\\"></span>September 12, 2019</li><li><span class=\\\"fa fa-user\\\"></span>Admin</li></ul><h5><a href=\\\"blog-single.html\\\">What we are capable of usually gets discovered.</a></h5><a href=\\\"blog-single.html\\\" class=\\\"theme-btn btn-style-ten\\\">View more</a></div></div></div><div class=\\\"news-block-two brown col-lg-4 col-md-6 col-sm-12\\\"><div class=\\\"inner-box wow fadeInUp\\\" data-wow-delay=\\\"600ms\\\" data-wow-duration=\\\"1500ms\\\"><div class=\\\"image\\\"><img src=\\\"\" + _imports_5 + \"\\\" alt=\\\"\\\"><div class=\\\"overlay-box\\\"><a href=\\\"/images/resource/news-6.jpg\\\" data-fancybox=\\\"news\\\" data-caption=\\\"\\\" class=\\\"plus flaticon-plus-symbol\\\"></a></div></div><div class=\\\"lower-content\\\"><ul class=\\\"post-meta\\\"><li><span class=\\\"fa fa-calendar\\\"></span>September 12, 2019</li><li><span class=\\\"fa fa-user\\\"></span>Admin</li></ul><h5><a href=\\\"blog-single.html\\\">Food industry leaders often change their promoters.</a></h5><a href=\\\"blog-single.html\\\" class=\\\"theme-btn btn-style-ten\\\">View more</a></div></div></div></div></div></section>\", 3)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return _hoisted_1\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123884463,
+      "end": 1709123884498,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123884498,
+      "end": 1709123884498,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123884498,
+      "end": 1709123884498,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123884498,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123884499,
+      "end": 1709123884499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123884499,
+      "end": 1709123884500,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123884500,
+      "end": 1709123884503,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123884503,
+      "end": 1709123884504,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1709123884504,
+      "end": 1709123884516,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123884517,
+      "end": 1709123884517,
+      "order": "normal"
+    }
+  ]
+}

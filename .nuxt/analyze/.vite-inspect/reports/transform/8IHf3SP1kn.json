@@ -1,0 +1,229 @@
+{
+  "resolvedId": "C:/Users/HP/Desktop/projets/next/000/update/coumbassa_sanden/pages/contact2.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <!--Page Title-->\r\n  <section class=\"page-title\" style=\"background-image:url('/images/background/8.jpg')\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"content\">\r\n        <h1>Contact <span>us</span></h1>\r\n        <ul class=\"page-breadcrumb\">\r\n          <li><a href=\"index.html\">Home</a></li>\r\n          <li>contact</li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <!--End Page Title-->\r\n\r\n  <!-- Contact Page Section -->\r\n  <section class=\"contact-page-section\">\r\n    <div class=\"map-section\">\r\n      <!--Map Outer-->\r\n      <div class=\"map-outer\">\r\n        <!--Map Canvas-->\r\n        <div class=\"map-canvas\"\r\n             data-zoom=\"12\"\r\n             data-lat=\"-37.817085\"\r\n             data-lng=\"144.955631\"\r\n             data-type=\"roadmap\"\r\n             data-hue=\"#ffc400\"\r\n             data-title=\"Envato\"\r\n             data-icon-path=\"images/icons/map-marker.png\"\r\n             data-content=\"Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>\">\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"auto-container\">\r\n      <div class=\"inner-container\">\r\n        <h2>Contact our support guys or make appointment <br> with <span>our consultan</span></h2>\r\n        <div class=\"row clearfix\">\r\n\r\n          <!-- Info Column -->\r\n          <div class=\"info-column col-lg-7 col-md-12 col-sm-12\">\r\n            <div class=\"inner-column\">\r\n              <div class=\"text\">Please contact us using the information below. For additional information on our management consulting services, please visit the appropriate page on our site.</div>\r\n              <ul class=\"list-style-five\">\r\n                <li><span class=\"icon fa fa-building\"></span> 131 Dartmouth Street <br> Boston, Massachusetts 02116 <br> United States</li>\r\n                <li><span class=\"icon fa fa-fax\"></span> +1 617 572 2000</li>\r\n                <li><span class=\"icon fa fa-envelope-o\"></span>support@finance.com</li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n\r\n          <!-- Form Column -->\r\n          <div class=\"form-column col-lg-5 col-md-12 col-sm-12\">\r\n            <div class=\"inner-column\">\r\n\r\n              <!--Contact Form-->\r\n              <div class=\"contact-form\">\r\n                <form method=\"post\" action=\"sendemail.php\" id=\"contact-form\">\r\n\r\n                  <div class=\"form-group\">\r\n                    <input type=\"text\" name=\"firstname\" value=\"\" placeholder=\"Full name\" required>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <input type=\"text\" name=\"email\" value=\"\" placeholder=\"Email\" required>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <select class=\"custom-select-box\">\r\n                      <option>Select topic</option>\r\n                      <option>Topic One</option>\r\n                      <option>Topic Two</option>\r\n                    </select>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <textarea name=\"message\" placeholder=\"write..\"></textarea>\r\n                  </div>\r\n\r\n                  <div class=\"form-group\">\r\n                    <button type=\"submit\" class=\"theme-btn\">Submit</button>\r\n                  </div>\r\n\r\n                </form>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <!-- End Team Page Section -->\r\n\r\n  <!-- Contact Info Section -->\r\n  <section class=\"contact-info-section\" style=\"background-image:url('/images/background/10.jpg')\">\r\n    <div class=\"auto-container\">\r\n      <div class=\"row clearfix\">\r\n\r\n        <div class=\"column col-lg-4 col-md-6 col-sm-12\">\r\n          <h4>United Kingdom</h4>\r\n          <ul class=\"list-style-six\">\r\n            <li><span class=\"icon flaticon-map-1\"></span> 49488 Avenida Obregon, <br> La Quinta, CA 92253</li>\r\n            <li><span class=\"icon flaticon-phone-receiver\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li>\r\n            <li><span class=\"icon flaticon-e-mail-envelope\"></span>support@finance.com.uk</li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"column col-lg-4 col-md-6 col-sm-12\">\r\n          <h4>Australia</h4>\r\n          <ul class=\"list-style-six\">\r\n            <li><span class=\"icon flaticon-map-1\"></span> 13/1 Dixon Street, Sydney <br> NSW 2000</li>\r\n            <li><span class=\"icon flaticon-phone-receiver\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li>\r\n            <li><span class=\"icon flaticon-e-mail-envelope\"></span>support@finance.com.uk</li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"column col-lg-4 col-md-6 col-sm-12\">\r\n          <h4>Netherlands</h4>\r\n          <ul class=\"list-style-six\">\r\n            <li><span class=\"icon flaticon-map-1\"></span> Nieuwe Leliestraat 27-HS <br> 101J Amsterdam</li>\r\n            <li><span class=\"icon flaticon-phone-receiver\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li>\r\n            <li><span class=\"icon flaticon-e-mail-envelope\"></span>support@finance.com.uk</li>\r\n          </ul>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <!-- End Contact Info Section -->\r\n</template>\r\n",
+      "start": 1709123880763,
+      "end": 1709123883910,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709123883910,
+      "end": 1709123883910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709123883912,
+      "end": 1709123883912,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, createStaticVNode as _createStaticVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createStaticVNode(\"<section class=\\\"page-title\\\" style=\\\"background-image:url(&#39;/images/background/8.jpg&#39;);\\\"><div class=\\\"auto-container\\\"><div class=\\\"content\\\"><h1>Contact <span>us</span></h1><ul class=\\\"page-breadcrumb\\\"><li><a href=\\\"index.html\\\">Home</a></li><li>contact</li></ul></div></div></section>\", 1)\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"section\", { class: \"contact-page-section\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"map-section\" }, [\n    /*#__PURE__*/_createElementVNode(\"div\", { class: \"map-outer\" }, [\n      /*#__PURE__*/_createElementVNode(\"div\", {\n        class: \"map-canvas\",\n        \"data-zoom\": \"12\",\n        \"data-lat\": \"-37.817085\",\n        \"data-lng\": \"144.955631\",\n        \"data-type\": \"roadmap\",\n        \"data-hue\": \"#ffc400\",\n        \"data-title\": \"Envato\",\n        \"data-icon-path\": \"images/icons/map-marker.png\",\n        \"data-content\": \"Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>\"\n      })\n    ])\n  ]),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"auto-container\" }, [\n    /*#__PURE__*/_createElementVNode(\"div\", { class: \"inner-container\" }, [\n      /*#__PURE__*/_createElementVNode(\"h2\", null, [\n        /*#__PURE__*/_createTextVNode(\"Contact our support guys or make appointment \"),\n        /*#__PURE__*/_createElementVNode(\"br\"),\n        /*#__PURE__*/_createTextVNode(\" with \"),\n        /*#__PURE__*/_createElementVNode(\"span\", null, \"our consultan\")\n      ]),\n      /*#__PURE__*/_createElementVNode(\"div\", { class: \"row clearfix\" }, [\n        /*#__PURE__*/_createElementVNode(\"div\", { class: \"info-column col-lg-7 col-md-12 col-sm-12\" }, [\n          /*#__PURE__*/_createElementVNode(\"div\", { class: \"inner-column\" }, [\n            /*#__PURE__*/_createElementVNode(\"div\", { class: \"text\" }, \"Please contact us using the information below. For additional information on our management consulting services, please visit the appropriate page on our site.\"),\n            /*#__PURE__*/_createElementVNode(\"ul\", { class: \"list-style-five\" }, [\n              /*#__PURE__*/_createElementVNode(\"li\", null, [\n                /*#__PURE__*/_createElementVNode(\"span\", { class: \"icon fa fa-building\" }),\n                /*#__PURE__*/_createTextVNode(\" 131 Dartmouth Street \"),\n                /*#__PURE__*/_createElementVNode(\"br\"),\n                /*#__PURE__*/_createTextVNode(\" Boston, Massachusetts 02116 \"),\n                /*#__PURE__*/_createElementVNode(\"br\"),\n                /*#__PURE__*/_createTextVNode(\" United States\")\n              ]),\n              /*#__PURE__*/_createElementVNode(\"li\", null, [\n                /*#__PURE__*/_createElementVNode(\"span\", { class: \"icon fa fa-fax\" }),\n                /*#__PURE__*/_createTextVNode(\" +1 617 572 2000\")\n              ]),\n              /*#__PURE__*/_createElementVNode(\"li\", null, [\n                /*#__PURE__*/_createElementVNode(\"span\", { class: \"icon fa fa-envelope-o\" }),\n                /*#__PURE__*/_createTextVNode(\"support@finance.com\")\n              ])\n            ])\n          ])\n        ]),\n        /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-column col-lg-5 col-md-12 col-sm-12\" }, [\n          /*#__PURE__*/_createElementVNode(\"div\", { class: \"inner-column\" }, [\n            /*#__PURE__*/_createElementVNode(\"div\", { class: \"contact-form\" }, [\n              /*#__PURE__*/_createElementVNode(\"form\", {\n                method: \"post\",\n                action: \"sendemail.php\",\n                id: \"contact-form\"\n              }, [\n                /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                  /*#__PURE__*/_createElementVNode(\"input\", {\n                    type: \"text\",\n                    name: \"firstname\",\n                    value: \"\",\n                    placeholder: \"Full name\",\n                    required: \"\"\n                  })\n                ]),\n                /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                  /*#__PURE__*/_createElementVNode(\"input\", {\n                    type: \"text\",\n                    name: \"email\",\n                    value: \"\",\n                    placeholder: \"Email\",\n                    required: \"\"\n                  })\n                ]),\n                /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                  /*#__PURE__*/_createElementVNode(\"select\", { class: \"custom-select-box\" }, [\n                    /*#__PURE__*/_createElementVNode(\"option\", null, \"Select topic\"),\n                    /*#__PURE__*/_createElementVNode(\"option\", null, \"Topic One\"),\n                    /*#__PURE__*/_createElementVNode(\"option\", null, \"Topic Two\")\n                  ])\n                ]),\n                /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                  /*#__PURE__*/_createElementVNode(\"textarea\", {\n                    name: \"message\",\n                    placeholder: \"write..\"\n                  })\n                ]),\n                /*#__PURE__*/_createElementVNode(\"div\", { class: \"form-group\" }, [\n                  /*#__PURE__*/_createElementVNode(\"button\", {\n                    type: \"submit\",\n                    class: \"theme-btn\"\n                  }, \"Submit\")\n                ])\n              ])\n            ])\n          ])\n        ])\n      ])\n    ])\n  ])\n], -1)\nconst _hoisted_3 = /*#__PURE__*/_createStaticVNode(\"<section class=\\\"contact-info-section\\\" style=\\\"background-image:url(&#39;/images/background/10.jpg&#39;);\\\"><div class=\\\"auto-container\\\"><div class=\\\"row clearfix\\\"><div class=\\\"column col-lg-4 col-md-6 col-sm-12\\\"><h4>United Kingdom</h4><ul class=\\\"list-style-six\\\"><li><span class=\\\"icon flaticon-map-1\\\"></span> 49488 Avenida Obregon, <br> La Quinta, CA 92253</li><li><span class=\\\"icon flaticon-phone-receiver\\\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li><li><span class=\\\"icon flaticon-e-mail-envelope\\\"></span>support@finance.com.uk</li></ul></div><div class=\\\"column col-lg-4 col-md-6 col-sm-12\\\"><h4>Australia</h4><ul class=\\\"list-style-six\\\"><li><span class=\\\"icon flaticon-map-1\\\"></span> 13/1 Dixon Street, Sydney <br> NSW 2000</li><li><span class=\\\"icon flaticon-phone-receiver\\\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li><li><span class=\\\"icon flaticon-e-mail-envelope\\\"></span>support@finance.com.uk</li></ul></div><div class=\\\"column col-lg-4 col-md-6 col-sm-12\\\"><h4>Netherlands</h4><ul class=\\\"list-style-six\\\"><li><span class=\\\"icon flaticon-map-1\\\"></span> Nieuwe Leliestraat 27-HS <br> 101J Amsterdam</li><li><span class=\\\"icon flaticon-phone-receiver\\\"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li><li><span class=\\\"icon flaticon-e-mail-envelope\\\"></span>support@finance.com.uk</li></ul></div></div></div></section>\", 1)\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _hoisted_2,\n    _hoisted_3\n  ], 64))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709123883912,
+      "end": 1709123883945,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709123883945,
+      "end": 1709123883945,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123883954,
+      "end": 1709123883954,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709123883954,
+      "end": 1709123883955,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709123883955,
+      "end": 1709123883955,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709123883955,
+      "end": 1709123883955,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709123883955,
+      "end": 1709123883955,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709123883956,
+      "end": 1709123883956,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709123883956,
+      "end": 1709123883963,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709123883963,
+      "end": 1709123883964,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1709123883964,
+      "end": 1709123883966,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709123883966,
+      "end": 1709123883966,
+      "order": "post"
+    },
+    {
+      "name": "quasar:directive",
+      "start": 1709123883966,
+      "end": 1709123883966,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709123883966,
+      "end": 1709123883966,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709123883966,
+      "end": 1709123883967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709123883967,
+      "end": 1709123883967,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709123883967,
+      "end": 1709123883967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709123883967,
+      "end": 1709123883967,
+      "order": "normal"
+    }
+  ]
+}

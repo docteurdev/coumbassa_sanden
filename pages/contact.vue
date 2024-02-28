@@ -11,7 +11,7 @@
           <!-- Info Column -->
           <div class="info-column col-lg-7 col-md-12 col-sm-12">
             <div class="inner-column">
-              <h3 v-html="pages?.part2"></h3>
+              <div style="font-size: 20px;" v-html="pages?.part2"></div>
               <!--              <div class="text">-->
               <!--                Veuillez nous contacter en utilisant les informations ci-dessous. Pour plus d'informations-->
               <!--                sur nos services de conseil en gestion, veuillez visiter la page appropriée sur notre site.-->
@@ -52,11 +52,11 @@
                     </select>
                   </div>
 
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <input class="form-control" v-if="myform.subject === 'rdv' || myform.subject === 'consultation'"
                            v-model="myform.start" type="datetime-local" name="start" placeholder="Date et Heure RDV"
                            style="border-radius: 0px;background: #e7e1d7">
-                  </div>
+                  </div> -->
 
                   <div class="form-group">
                     <textarea v-model="myform.description" name="message" placeholder="Votre message.."></textarea>
@@ -89,9 +89,20 @@
   <!-- End Team Page Section -->
 
   <!-- Contact Info Section -->
-  <section class="contact-info-section" style="background-image:url('/images/background/10.jpg')">
+  <section class="contact-info-section" style="background-image:url('/images/background/patern-3.png')">
     <div class="auto-container">
       <div class="row clearfix">
+        <div class="column col-lg-4 col-md-6 col-sm-12">
+          <h4>Adresse</h4>
+          <ul class="list-style-six">
+            <li><span class="icon flaticon-map-1"></span>
+              Rue du Chevalier de Clieu <br>
+              Immeuble Sabalias, 2ème étage <br>
+              Zone 4 - Marcory <br>
+              ABIDJAN - RCI
+            </li>
+          </ul>
+        </div>
 
         <div class="column col-lg-4 col-md-6 col-sm-12">
           <h4>Email</h4>
@@ -106,14 +117,15 @@
               <span class="icon flaticon-phone-receiver"></span>
               +(225) 07 10 10 29 43
             </li>
+            <li>
+              <img 
+              style="filter: drop-shadow(2px 4px 6px black);width: 180px; "
+              src="/img/QR-CODE.png" alt="QR-CODE.png" srcset="">
+            </li>
           </ul>
         </div>
-        <div class="column col-lg-4 col-md-6 col-sm-12">
-          <h4>Adresse</h4>
-          <ul class="list-style-six">
-            <li><span class="icon flaticon-map-1"></span> RCI Abidjan Zone 4</li>
-          </ul>
-        </div>
+
+
 
       </div>
 
@@ -124,13 +136,39 @@
 
 <script setup>
 import VueClientRecaptcha from "vue-client-recaptcha";
+import axios from "axios";
+import { useQuasar } from 'quasar';
+
+const $q = useQuasar()
 
 useHead({
   title: 'Contacts',
 })
 const runtimeConfig = useRuntimeConfig()
 const api = runtimeConfig.public.api
-const apiRoot = runtimeConfig.public.apiRoot
+const apiRoot = runtimeConfig.public.apiRoot;
+const url  = runtimeConfig.public.url
+
+// const mail = useMail();
+
+async function sendMail(){
+try {
+  const data = myform.value;
+  // return console.log(data);
+  const res = await axios.post(url+'/api/mailSender', data);
+  console.log(res.data);
+} catch (error) {
+  console.log(error);
+  
+}
+}
+
+function showNotif() {
+  $q.notify({
+    message: 'Merci ! Nous vous contacterons bientôt.',
+    color: 'green',
+  })
+}
 
 const subject = ref('')
 const myform = ref({subject: 'Sujet'})
@@ -141,18 +179,30 @@ const {data: pagesList} = await useFetch(() => api+'/blogpages/5')
 const pages = pagesList.value['data']
 
 async function sendForm() {
-  // if(checkValidCaptcha) {
-  //   console.log(myform.value)
-  //   console.log(inputValue)
-  // getCaptchaCode(inputValue)
-    // console.log(checkValidCaptcha(inputValue))
-    // console.log(getCaptchaCode(inputValue))
-  // }
-  // const res = useFetch(
-  //     api+'/contacts',
-  //     { method: 'POST', body: JSON.stringify({data: myform.value}) }
-  // )
-  // console.log(res);
+  if(checkValidCaptcha) {
+    console.log(myform.value)
+    console.log(inputValue)
+    getCaptchaCode(inputValue)
+    console.log(checkValidCaptcha(inputValue))
+    console.log(getCaptchaCode(inputValue))
+  }
+  try {
+    const res = useFetch(
+        api+'/contacts',
+        { method: 'POST', body: JSON.stringify({data: myform.value}) })
+      if(res.data){
+        console.log(res);
+        sendMail();
+        setTimeout(() => {
+          myform.value = {}
+           showNotif()
+
+        }, 2000);
+    }
+    
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 
